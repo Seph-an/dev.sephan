@@ -30,7 +30,8 @@ type CaseStudyJson = {
 const parsedCaseStudies = (caseStudiesData as CaseStudyJson).items ?? [];
 
 export async function fetchCaseStudies(): Promise<CaseStudyItem[]> {
-  return parsedCaseStudies;
+  // Returns case studies in reverse order (latest added at the top)
+  return [...parsedCaseStudies].reverse();
 }
 
 export async function getCaseStudyBySlug(slug: string) {
