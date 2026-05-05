@@ -59,7 +59,7 @@
         "ATS integration"
       ],
       "cardLogo": "/client-logos/gap.webp",
-      "cardIcon": "/client-favicons/gap.ico",
+      "cardIcon": "/client-logos/gap.webp",
       "cardLogoText": null,
       "cardIconText": null
     },
@@ -103,7 +103,7 @@
         "Zoho Developer Tools"
       ],
       "cardLogo": "/client-logos/browns.png",
-      "cardIcon": "/client-favicons/browns.ico",
+      "cardIcon": "/client-logos/browns.png",
       "cardLogoText": null,
       "cardIconText": null
     },
