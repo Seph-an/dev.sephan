@@ -345,6 +345,53 @@
       "cardIcon": "/client-favicons/postiz.webp",
       "cardLogoText": null,
       "cardIconText": null
+    },
+    {
+      "id": "coolify-devops",
+      "slug": "coolify-private-paas-orchestration",
+      "title": "Coolify: Unified DevOps and Private PaaS Orchestration",
+      "teaser": "Enterprise grade self hosted PaaS for automated deployments and infrastructure management. Centralized dashboard for multiple servers and services.",
+      "preview": "/preview/coolify.png",
+      "cardTags": [
+        "DevOps",
+        "PaaS",
+        "Docker",
+        "Self-Hosted",
+        "CI/CD",
+        "Automation",
+        "Traefik",
+        "SSL",
+        "VPS",
+        "Linux",
+        "Cloud",
+        "Infrastructure"
+      ],
+      "highlights": [
+        "Problem: Fragmentation and high costs of managed hosting platforms.",
+        "Process: Implementation of a centralized orchestration layer for Git to deploy automation.",
+        "Outcome: 100 percent reduction in PaaS subscription costs with 10+ active services."
+      ],
+      "HeroSummary": "Modern development often suffers from fragmented infrastructure and excessive 'per app' hosting fees. I engineered a private Platform as a Service (PaaS) using Coolify to centralize the management of all my production and staging environments. By orchestrating a unified dashboard on a private VPS, I enabled automated Git to deploy workflows, zero downtime updates, and built in monitoring for a diverse stack of applications. This setup provides the convenience of premium managed platforms while retaining full control over resource allocation and data sovereignty at a fraction of the cost.",
+      "Problem": "As the number of client projects and internal tools grew, managing individual Docker containers, manual SSH deployments, and SSL certificates became unsustainable. Managed services like Vercel, Railway, and Heroku offered convenience but introduced significant scaling costs and vendor lock in. I needed a centralized, self hosted solution that could provide enterprise grade DevOps automation, automated SSL termination, and resource monitoring for multiple servers from a single pane of glass.",
+      "Process": "1. Architecture Setup\nI deployed Coolify as the core orchestration engine on a dedicated VPS. This served as the command center for multiple 'child' servers, allowing for remote infrastructure management without individual server overhead.\n\n2. Deployment Automation\nI configured GitHub webhooks to enable a seamless developer experience: pushing code to specific branches triggers automatic image builds and container updates. This eliminates manual deployment errors and ensures consistency across environments.\n\n3. Service Orchestration\nThe platform was used to spin up and manage a complex ecosystem of services, including Next.js applications, Strapi CMS instances, and various databases. Each service is automatically assigned an SSL certificate via an integrated Traefik reverse proxy.\n\n4. Resource Optimization\nBy using Coolify to pack multiple services onto high performance VPS instances, I maximized CPU and memory utilization. Built in health checks and auto restart policies ensure high availability and self healing for all managed applications.",
+      "Outcome": "The result is a professional DevOps ecosystem that matches the features of premium managed platforms. I now manage over 10 distinct production services with zero recurring PaaS fees. The time required for server maintenance and deployments has been reduced by over 80 percent, allowing for a primary focus on engineering rather than infrastructure firefighting. This setup demonstrates how self hosting can deliver superior performance and flexibility while drastically reducing operational expenditure.",
+      "TechStack": [
+        "Coolify",
+        "Docker",
+        "Traefik",
+        "Git",
+        "GitHub Actions",
+        "NGINX",
+        "Linux (Ubuntu)",
+        "SSL/TLS (Let's Encrypt)",
+        "VPS",
+        "Bash Scripting",
+        "Infrastructure as Code"
+      ],
+      "cardLogo": "/client-logos/coolify.webp",
+      "cardIcon": "/client-favicons/coolify.webp",
+      "cardLogoText": null,
+      "cardIconText": null
     }
   ]
 }
