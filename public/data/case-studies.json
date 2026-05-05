@@ -296,6 +296,55 @@
       "cardIcon": "/client-favicons/urbanac.ico",
       "cardLogoText": null,
       "cardIconText": null
+    },
+    {
+      "id": "postiz-automation",
+      "slug": "postiz-social-media-automation",
+      "title": "Postiz: Self Hosted Social Media Automation Ecosystem",
+      "teaser": "Unified social media management platform self hosted on VPS. Automated scheduling, multi platform integration, and zero subscription costs.",
+      "url": "https://postiz.sephanly.com",
+      "preview": "/preview/postiz.png",
+      "cardTags": [
+        "Docker",
+        "PostgreSQL",
+        "Redis",
+        "Temporal",
+        "Elasticsearch",
+        "Coolify",
+        "VPS",
+        "Automation",
+        "Self-Hosted",
+        "Open-Source",
+        "API",
+        "Social"
+      ],
+      "highlights": [
+        "Problem: High subscription costs for fragmented social media tools.",
+        "Process: Orchestrated multi container setup via Coolify, Temporal for task queuing, and Redis for caching.",
+        "Outcome: Centralized management for multiple clients with zero recurring software fees."
+      ],
+      "HeroSummary": "Managing social media across multiple platforms often requires expensive third party subscriptions and fragmented workflows. I engineered a self hosted automation ecosystem using Postiz, deployed on a private VPS via Coolify. By orchestrating a robust backend consisting of PostgreSQL, Redis, Temporal, and Elasticsearch, I created a high availability platform that allows for unlimited social media scheduling and third party integrations. The result is a professional grade management tool that eliminates monthly subscription overhead while providing full data ownership and extensibility.",
+      "Problem": "I needed a scalable way to automate social media management for both personal projects and client portfolios without the burden of recurring monthly fees. Existing tools often limit the number of platforms or posts unless you pay for premium tiers. The challenge was to deploy an enterprise grade open source alternative that could handle complex task scheduling, full text search for content libraries, and reliable background processing, all while maintaining a low operational cost on a standard VPS.",
+      "Process": "1. Infrastructure and Deployment\nI chose a self hosted approach using Coolify for specialized DevOps management on a VPS. The application was containerized with Docker to ensure environment consistency and easy scaling.\n\n2. Backend Architecture\nTo handle the demands of multi platform automation, I implemented a layered stack:\n- Temporal for managing complex, long running background workflows and retries.\n- Redis for high speed caching and session management.\n- PostgreSQL for relational data storage and user management.\n- Elasticsearch to enable fast searching through large content archives.\n\n3. Integration and Automation\nThe system was configured to connect with various social media APIs. Because the platform is self hosted, I have the flexibility to integrate any third party tools or custom webhooks required for specific client needs.\n\n4. Optimization and Maintenance\nBy running the entire stack on a single VPS, I consolidated the footprint while ensuring each service (Redis, DB, Search) had appropriate resource limits. This setup provides the performance of a premium SaaS at the cost of basic server hosting.",
+      "Outcome": "The platform now serves as a centralized hub for all social media operations at https://postiz.sephanly.com. It allows for unlimited scheduling, multi account management, and deep integration with other tools in my workflow. By moving away from SaaS platforms, I reduced software overhead to zero and gained complete control over the data and scheduling logic, resulting in a more flexible and cost effective solution for digital marketing automation.",
+      "TechStack": [
+        "Postiz",
+        "Docker",
+        "Coolify",
+        "PostgreSQL",
+        "Redis",
+        "Temporal",
+        "Elasticsearch",
+        "VPS",
+        "Linux",
+        "REST API",
+        "Social Media APIs",
+        "Git"
+      ],
+      "cardLogo": "/client-logos/postiz.webp",
+      "cardIcon": "/client-favicons/postiz.webp",
+      "cardLogoText": null,
+      "cardIconText": null
     }
   ]
 }
