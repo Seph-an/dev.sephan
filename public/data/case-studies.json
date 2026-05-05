@@ -392,6 +392,52 @@
       "cardIcon": "/client-favicons/coolify.webp",
       "cardLogoText": null,
       "cardIconText": null
+    },
+    {
+      "id": "strapi-cms-autonomy",
+      "slug": "strapi-headless-cms-creative-autonomy",
+      "title": "Strapi: Empowering Client Autonomy via Headless CMS Architecture",
+      "teaser": "Headless CMS solution that decouples content from code. Provides non technical clients with full editorial control and zero developer dependency.",
+      "url": "https://strapi.gaprecruitment.co.ke",
+      "preview": "/preview/strapi.png",
+      "cardTags": [
+        "Strapi",
+        "Headless CMS",
+        "Node.js",
+        "REST API",
+        "PostgreSQL",
+        "Role-Based Access",
+        "Media Library",
+        "Webhooks",
+        "Digital Transformation",
+        "Content Strategy"
+      ],
+      "highlights": [
+        "Problem: High maintenance costs and slow updates due to developer dependency.",
+        "Process: Implementation of a headless architecture with custom content types and a user friendly admin panel.",
+        "Outcome: 100 percent editorial independence for clients with zero code interaction."
+      ],
+      "HeroSummary": "Traditional websites often leave clients tethered to developers for even the smallest text or image changes. I engineered a headless content ecosystem using Strapi CMS that completely decouples the backend content from the frontend presentation. By providing a professional grade, intuitive admin dashboard, I've empowered non technical business owners to manage their entire digital presence—from blog posts to complex service listings—without ever reading a line of code. This architecture ensures that the client owns their content lifecycle while benefiting from a modern, high performance frontend that updates in real time.",
+      "Problem": "Clients often feel frustrated by the 'bottleneck effect' where simple content updates require a developer's intervention, leading to delays and recurring maintenance fees. At the same time, businesses need to stay current with modern design trends and high speed performance. The challenge was to provide a system that is as easy to use as a word processor but powerful enough to feed data into cutting edge frameworks like Next.js, allowing for infinite flexibility without technical complexity.",
+      "Process": "1. Strategic Content Modeling\nI designed custom content types and schemas in Strapi that mirror the client's business logic. This ensures that the data structure is logical, reusable, and easy for the client to navigate within the admin panel.\n\n2. User Centric Dashboard Design\nThe admin interface was configured with Role Based Access Control (RBAC), giving clients a clean, focused workspace. I organized the media library and entry forms to ensure that uploading high resolution assets and formatting text is seamless and error proof.\n\n3. Headless API Orchestration\nI built a robust REST API layer that serves content as structured JSON. This allows the frontend to stay lean and fast, fetching only the necessary data and rendering it using the latest CSS styles and React components.\n\n4. Real Time Updates via Webhooks\nI implemented automated webhooks that trigger frontend rebuilds or cache purges whenever a client hits 'Publish.' This ensures that the time between a client making a change and it appearing live on the site is near zero.",
+      "Outcome": "The implementation of Strapi has transformed the client experience from 'managed' to 'autonomous.' Clients now save dozens of hours per month by handling their own updates, while the business benefits from zero ongoing developer costs for content management. Furthermore, because the content is decoupled, the frontend can be completely redesigned or upgraded to the latest technology without ever touching the backend data, providing a future proof digital asset that evolves with the business.",
+      "TechStack": [
+        "Strapi CMS",
+        "Node.js",
+        "PostgreSQL",
+        "REST API",
+        "JSON",
+        "JWT Authentication",
+        "Cloudinary/AWS S3",
+        "Webhooks",
+        "Docker",
+        "Next.js Integration",
+        "RBAC"
+      ],
+      "cardLogo": "/client-logos/strapi.webp",
+      "cardIcon": "/client-favicons/strapi.webp",
+      "cardLogoText": null,
+      "cardIconText": null
     }
   ]
 }
