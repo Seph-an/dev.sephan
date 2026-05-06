@@ -33,7 +33,7 @@ export default function Hero() {
         >
           <motion.div variants={item} className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80 backdrop-blur">
             <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-            <span>Open to roles · Remote & On‑site (Nairobi, KE)</span>
+            <span>Open to remote roles</span>
           </motion.div>
 
           <motion.h1 variants={item} className="text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl">
@@ -119,7 +119,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Sephan</h3>
-                    <p className="text-sm text-white/70">Full‑Stack · Next.js · DevOps</p>
+                    <p className="text-sm text-white/70">AI · Full‑Stack · Automation · DevOps · SEO</p>
                     <p className="mt-1 flex items-center gap-1.5 text-xs text-white/60">
                       <MapPin className="h-3.5 w-3.5" /> Nairobi, KE
                     </p>
