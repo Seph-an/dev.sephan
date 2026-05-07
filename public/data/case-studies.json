@@ -438,6 +438,52 @@
       "cardIcon": "/client-favicons/strapi.webp",
       "cardLogoText": null,
       "cardIconText": null
+    },
+    {
+      "id": "n8n-automation",
+      "slug": "n8n-workflow-automation-orchestration",
+      "title": "n8n: Advanced Workflow Orchestration and Service Integration",
+      "teaser": "Self hosted, node based automation platform that eliminates 'per task' costs. Orchestrates complex data flows between CRM, Slack, and custom APIs.",
+      "url": "https://n8n.sephanly.com",
+      "preview": "/preview/n8n.png",
+      "cardTags": [
+        "n8n",
+        "Automation",
+        "Workflow",
+        "Node-Based",
+        "Self-Hosted",
+        "Webhooks",
+        "API Integration",
+        "Docker",
+        "Coolify",
+        "DevOps",
+        "Data Transformation"
+      ],
+      "highlights": [
+        "Problem: High recurring costs and limited logic in standard automation tools.",
+        "Process: Deployment of a self-hosted n8n instance for complex, multi-node conditional workflows.",
+        "Outcome: Eliminated 'Zapier tax' while enabling advanced logic and full data privacy."
+      ],
+      "HeroSummary": "Most businesses struggle with the 'Zapier tax'—rising costs as automation scales—and the lack of complex logic in standard tools. I engineered a self-hosted automation hub using n8n, deployed on a private VPS. This platform allows for sophisticated, node-based workflows that can handle advanced branching, loops, and custom data transformations across hundreds of integrations. By moving automation in-house, I've enabled the orchestration of complex business processes with zero per-task fees and absolute data sovereignty.",
+      "Problem": "A common pain point for growing teams is the fragmentation of data across silos like CRMs, spreadsheets, and communication tools. Standard automation platforms often charge per execution, which penalizes success and discourages high-volume data syncs. Furthermore, simple 'if-this-then-that' tools fail when workflows require complex conditional logic, data reformatting, or multi-step integrations that need to respect privacy and security standards.",
+      "Process": "1. Infrastructure Orchestration\nI deployed n8n using a containerized stack on a VPS, managed via Coolify. This ensures high availability and easy updates while keeping all automation data within a controlled environment.\n\n2. Complex Workflow Design\nUnlike basic tools, I utilized n8n's node-based interface to build workflows that involve complex logic. For example, a single webhook can trigger a sequence that validates data, branches based on lead quality, updates a CRM, sends a formatted Slack alert, and archives the event in a database—all in one execution.\n\n3. API and Webhook Integration\nI configured the system to act as a bridge between various third-party services. Because n8n is self-hosted, I can easily integrate custom internal APIs and webhooks that managed platforms often struggle to reach due to firewall or security restrictions.\n\n4. Cost and Performance Optimization\nBy running n8n on my own infrastructure, I eliminated the cost-per-task model. This allows for high-frequency automations—such as real-time lead processing or inventory syncing—that would be cost-prohibitive on managed platforms.",
+      "Outcome": "The platform at https://n8n.sephanly.com now serves as the central nervous system for various business operations. It has successfully replaced multiple expensive SaaS subscriptions with a single, highly flexible orchestration layer. The result is a system that grows with the business without increasing costs, providing advanced automation capabilities and complete ownership of every data byte processed.",
+      "TechStack": [
+        "n8n",
+        "Docker",
+        "Coolify",
+        "Node.js",
+        "PostgreSQL",
+        "REST APIs",
+        "Webhooks",
+        "Bash Scripting",
+        "VPS Hosting",
+        "JSON Transformation"
+      ],
+      "cardLogo": "/client-logos/n8n.webp",
+      "cardIcon": "/client-favicons/n8n.webp",
+      "cardLogoText": null,
+      "cardIconText": null
     }
   ]
 }
