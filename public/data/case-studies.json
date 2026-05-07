@@ -476,7 +476,8 @@
         "REST APIs",
         "Webhooks",
         "VPS Hosting",
-        "Data Transformation"
+        "Data Transformation",
+        "Low-Code Development"
       ],
       "cardLogo": "/client-logos/n8n.webp",
       "cardIcon": "/client-favicons/n8n.webp",
