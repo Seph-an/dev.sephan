@@ -12,6 +12,7 @@ const navItems = [
   { label: "About me", href: "/about" },
   { label: "Project portfolio", href: "/case-studies" },
   { label: "Services", href: "/services" },
+  { label: "FAQs", href: "/faqs" },
 ];
 
 const poppins = Poppins({
