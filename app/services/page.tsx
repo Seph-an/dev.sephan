@@ -37,21 +37,21 @@ const serviceSections = [
 ];
 
 export const metadata: Metadata = {
-  title: "Services & capabilities",
+  title: "Engineering Services and Technical Capabilities",
   description:
-    "Explore Sephan’s service catalog—from high-performance web development to automation, AI integrations, SEO, DevOps, and security.",
+    "Advanced technical services including high-performance API integrations, automation workflows, SEO optimization, and secure DevOps systems.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Services & capabilities",
+    title: "Engineering Services and Technical Capabilities",
     description:
-      "Web development, automation, AI, SEO, DevOps, and security services crafted by Sephan for ambitious organizations.",
+      "Specialized engineering services for high-volume automation, resilient API integrations, and secure infrastructure management.",
     url: `${siteMetadata.siteUrl}/services`,
     type: "website",
   },
   twitter: {
-    title: "Services & capabilities",
+    title: "Engineering Services and Technical Capabilities",
     description:
-      "Work with Sephan on web platforms, automation, AI enablement, SEO, DevOps, and security-first delivery.",
+      "Specialized engineering services for high-volume automation, resilient API integrations, and secure infrastructure management.",
   },
 };
 

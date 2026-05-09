@@ -5,21 +5,21 @@ import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
-  title: "Full-stack engineer & AI-ready problem solver",
+  title: "Full stack engineer specializing in API integrations and DevOps",
   description:
-    "Work with Sephan to design, build, and operate resilient full-stack platforms—covering UI, APIs, automations, and DevOps with measurable outcomes.",
+    "Expert technical solutions for API integrations, automated workflows, and robust DevOps systems with measurable business outcomes.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Full-stack engineer & AI-ready problem solver",
+    title: "Full stack engineer specializing in API integrations and DevOps",
     description:
-      "Sephan designs and ships resilient web platforms with measurable outcomes for founders and product teams worldwide.",
+      "Specialized engineering for resilient API integrations, high-volume automation, and secure DevOps systems.",
     url: siteMetadata.siteUrl,
     type: "website",
   },
   twitter: {
-    title: "Full-stack engineer & AI-ready problem solver",
+    title: "Full stack engineer specializing in API integrations and DevOps",
     description:
-      "Sephan designs and ships resilient web platforms with measurable outcomes for founders and product teams worldwide.",
+      "Specialized engineering for resilient API integrations, high-volume automation, and secure DevOps systems.",
   },
 };
 

@@ -3,16 +3,16 @@ export const siteMetadata = {
   siteUrl: "https://dev.sephan.co.ke",
   siteAuthor: "Sephan",
   contactEmail: "hello@sephanly.com",
-  brandTagline: "Full-Stack Engineer & Systems Builder",
+  brandTagline: "Full stack engineer specializing in API integrations and DevOps",
   defaultDescription:
-    "Sephan is a Nairobi-based full-stack engineer who ships resilient web platforms, automation, and AI-ready systems for ambitious teams.",
+    "Expert technical solutions for high-performance API integrations, automated workflows, and robust DevOps systems with measurable business outcomes.",
   keywords: [
     "Sephan",
-    "Full-Stack Engineer",
-    "Next.js developer",
-    "AI automation",
-    "DevOps consultant",
-    "Nairobi software engineer",
+    "Full stack Engineer",
+    "API integration",
+    "automated workflows",
+    "DevOps systems",
+    "scalable software solutions",
   ],
   location: {
     city: "Nairobi",
