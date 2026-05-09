@@ -1,6 +1,6 @@
 export const siteMetadata = {
   siteName: "Sephan",
-  siteUrl: "https://www.sephan.co.ke",
+  siteUrl: "https://dev.sephan.co.ke",
   siteAuthor: "Sephan",
   contactEmail: "hello@sephanly.com",
   brandTagline: "Full-Stack Engineer & Systems Builder",
