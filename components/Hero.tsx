@@ -150,33 +150,49 @@ export default function Hero() {
               {/* Technology Marquee */}
               <div className="mt-8 overflow-hidden">
                 <div className="marquee-container">
-                  <div className="marquee-content">
+                  <div className="marquee-content flex-nowrap">
                     {[
-                      "airtel.webp", "apache-tika.webp", "apple.webp", "bagisto.webp",
-                      "codex-color.webp", "colab.webp", "coolify.webp", "digital-ocean.webp",
-                      "gemini-color.webp", "geminicli-color.webp", "git.webp", "github-light.webp",
-                      "google-analytics.webp", "google-search-console.webp", "jenkins.webp",
-                      "laravel.webp", "linux.webp", "mcp.webp", "n8n.webp", "nextjs.webp",
-                      "nginx.webp", "node-js.webp", "openai-light.webp", "php.webp",
-                      "postiz.webp", "reactjs.webp", "strapi.webp", "vscode.webp",
-                      "zoho.webp", "sephanly.png"
-                    ].concat([
-                      "airtel.webp", "apache-tika.webp", "apple.webp", "bagisto.webp",
-                      "codex-color.webp", "colab.webp", "coolify.webp", "digital-ocean.webp",
-                      "gemini-color.webp", "geminicli-color.webp", "git.webp", "github-light.webp",
-                      "google-analytics.webp", "google-search-console.webp", "jenkins.webp",
-                      "laravel.webp", "linux.webp", "mcp.webp", "n8n.webp", "nextjs.webp",
-                      "nginx.webp", "node-js.webp", "openai-light.webp", "php.webp",
-                      "postiz.webp", "reactjs.webp", "strapi.webp", "vscode.webp",
-                      "zoho.webp", "sephanly.png"
-                    ]).map((logo, idx) => (
-                      <div key={`${logo}-${idx}`} className="flex shrink-0 items-center justify-center">
+                      "airtel.webp", "apache-tika.webp", "apple-light.svg", "bagisto.webp",
+                      "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
+                      "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
+                      "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
+                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
+                      "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
+                      "ollama-dark.svg", "openai-light.webp", "php.webp", "postgresql.svg", "postiz.webp",
+                      "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
+                      "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
+                      "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
+                    ].map((logo, idx) => (
+                      <div key={`logo-1-${idx}`} className="flex shrink-0 items-center justify-center">
                         <Image
                           src={`/marquee/${logo}`}
                           alt="tech logo"
-                          width={24}
-                          height={24}
-                          className="h-6 w-auto opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                          width={28}
+                          height={28}
+                          className="h-7 w-auto transition-all hover:scale-110"
+                        />
+                      </div>
+                    ))}
+                    {/* Duplicate set for perfect infinite loop */}
+                    {[
+                      "airtel.webp", "apache-tika.webp", "apple-light.svg", "bagisto.webp",
+                      "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
+                      "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
+                      "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
+                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
+                      "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
+                      "ollama-dark.svg", "openai-light.webp", "php.webp", "postgresql.svg", "postiz.webp",
+                      "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
+                      "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
+                      "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
+                    ].map((logo, idx) => (
+                      <div key={`logo-2-${idx}`} className="flex shrink-0 items-center justify-center">
+                        <Image
+                          src={`/marquee/${logo}`}
+                          alt="tech logo"
+                          width={28}
+                          height={28}
+                          className="h-7 w-auto transition-all hover:scale-110"
                         />
                       </div>
                     ))}
