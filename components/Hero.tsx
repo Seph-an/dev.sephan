@@ -63,11 +63,11 @@ export default function Hero() {
 
           {/* CTAs */}
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="group h-11 rounded-xl bg-white text-black transition hover:brightness-95">
+            <Button asChild size="lg" className="group h-11 rounded-xl bg-emerald-500 text-[#0a0a0a] font-bold transition hover:bg-emerald-400">
               <a href="mailto:sephan@sephanly.com" aria-label="Email me">
-                <Mail className="mr-2 h-4 w-4" />
+                <Mail className="mr-2 h-4 w-4 text-[#0a0a0a]" />
                 Discuss a Project
-                <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5" />
+                <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5 text-[#0a0a0a]" />
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-11 rounded-xl border-white/20 bg-white/5 text-white hover:bg-white/10">

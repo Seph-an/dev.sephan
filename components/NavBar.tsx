@@ -82,10 +82,10 @@ export default function NavBar() {
             <Button
               asChild
               size="lg"
-              className="hidden h-11 rounded-xl bg-white px-5 text-black transition hover:brightness-95 sm:inline-flex"
+              className="hidden h-11 rounded-xl bg-emerald-500 px-5 text-[#0a0a0a] font-bold transition hover:bg-emerald-400 sm:inline-flex"
             >
               <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
-                <Check className="mr-2 h-4 w-4 text-emerald-500" />
+                <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
                 Discuss a Project
               </a>
             </Button>
@@ -133,10 +133,10 @@ export default function NavBar() {
             <Button
               asChild
               size="lg"
-              className="m-3 h-11 rounded-xl bg-white text-black transition hover:brightness-95"
+              className="m-3 h-11 rounded-xl bg-emerald-500 text-[#0a0a0a] font-bold transition hover:bg-emerald-400"
             >
               <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
-                <Check className="mr-2 h-4 w-4 text-emerald-500" />
+                <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
                 Discuss a Project
               </a>
             </Button>
