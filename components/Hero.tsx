@@ -66,7 +66,7 @@ export default function Hero() {
             <Button asChild size="lg" className="group h-11 rounded-xl bg-white text-black transition hover:brightness-95">
               <a href="mailto:sephan@sephanly.com" aria-label="Email me">
                 <Mail className="mr-2 h-4 w-4" />
-                Hire Me
+                Discuss a Project
                 <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5" />
               </a>
             </Button>
