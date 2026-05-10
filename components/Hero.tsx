@@ -143,7 +143,7 @@ export default function Hero() {
 
               <div className="mt-6 rounded-xl border border-white/10 bg-white/[0.06] p-4">
                 <p className="text-sm text-white/75">
-                  <span className="text-emerald-500">Recent highlight:</span> reduced LCP from <span className="tabular-nums">4.2s</span> → <span className="tabular-nums">1.6s</span> on a high‑traffic e‑commerce build by optimizing images, caching, and edge‑rendering.
+                  <span className="text-emerald-500">Recent highlight:</span> scraped and upscaled <span className="tabular-nums">3,000+</span> product images in under <span className="tabular-nums">45m</span> using a custom <span className="text-white">Real-ESRGAN</span> pipeline on Google Colab GPUs to deliver optimized, high-fidelity catalog assets for an e-commerce project.
                 </p>
               </div>
 
