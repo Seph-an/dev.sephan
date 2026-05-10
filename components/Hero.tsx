@@ -147,15 +147,40 @@ export default function Hero() {
                 </p>
               </div>
 
-              {/* Faux logo strip */}
-              <div className="mt-6">
-                <p className="mb-2 text-xs uppercase tracking-wide text-white/50">Trusted by teams at</p>
-                <div className="grid grid-cols-3 gap-2">
-                  {["Gap Recruitment","Urbanac","Browns Pharmacy"].map((l) => (
-                    <div key={l} className="flex h-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-[11px] font-medium uppercase tracking-wide text-white/60">
-                      {l}
-                    </div>
-                  ))}
+              {/* Technology Marquee */}
+              <div className="mt-8 overflow-hidden">
+                <div className="marquee-container">
+                  <div className="marquee-content">
+                    {[
+                      "airtel.webp", "apache-tika.webp", "apple.webp", "bagisto.webp",
+                      "codex-color.webp", "colab.webp", "coolify.webp", "digital-ocean.webp",
+                      "gemini-color.webp", "geminicli-color.webp", "git.webp", "github-light.webp",
+                      "google-analytics.webp", "google-search-console.webp", "jenkins.webp",
+                      "laravel.webp", "linux.webp", "mcp.webp", "n8n.webp", "nextjs.webp",
+                      "nginx.webp", "node-js.webp", "openai-light.webp", "php.webp",
+                      "postiz.webp", "reactjs.webp", "strapi.webp", "vscode.webp",
+                      "zoho.webp", "sephanly.png"
+                    ].concat([
+                      "airtel.webp", "apache-tika.webp", "apple.webp", "bagisto.webp",
+                      "codex-color.webp", "colab.webp", "coolify.webp", "digital-ocean.webp",
+                      "gemini-color.webp", "geminicli-color.webp", "git.webp", "github-light.webp",
+                      "google-analytics.webp", "google-search-console.webp", "jenkins.webp",
+                      "laravel.webp", "linux.webp", "mcp.webp", "n8n.webp", "nextjs.webp",
+                      "nginx.webp", "node-js.webp", "openai-light.webp", "php.webp",
+                      "postiz.webp", "reactjs.webp", "strapi.webp", "vscode.webp",
+                      "zoho.webp", "sephanly.png"
+                    ]).map((logo, idx) => (
+                      <div key={`${logo}-${idx}`} className="flex shrink-0 items-center justify-center">
+                        <Image
+                          src={`/marquee/${logo}`}
+                          alt="tech logo"
+                          width={24}
+                          height={24}
+                          className="h-6 w-auto opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </CardContent>
