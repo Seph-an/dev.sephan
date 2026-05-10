@@ -119,7 +119,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Sephan</h3>
-                    <p className="text-sm text-white/70">AI · Full‑Stack · Automation · DevOps · SEO</p>
+                    <p className="text-sm text-white/70">AI · Automation · DevOps</p>
                     <p className="mt-1 flex items-center gap-1.5 text-xs text-white/60">
                       <MapPin className="h-3.5 w-3.5" /> Nairobi, KE
                     </p>
