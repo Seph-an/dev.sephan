@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import CaseStudiesAnimatedShell from "@/components/CaseStudiesAnimatedShell";
 import JsonLd from "@/components/JsonLd";
 import { fetchCaseStudies } from "@/lib/caseStudies";
@@ -53,6 +54,9 @@ export default async function CaseStudiesPage() {
     <>
       <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white">
         <section className="relative isolate overflow-hidden px-6 pb-16 pt-28 md:px-8">
+          <div className="relative z-10 mx-auto max-w-6xl mb-8">
+            <Breadcrumbs items={[{ label: "Project portfolio" }]} />
+          </div>
           {/* Background layers */}
           <div className="hero__bg">
             <div className="hero__glow"></div>

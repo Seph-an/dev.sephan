@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Plus } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/siteMetadata";
@@ -12,83 +13,134 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What kinds of projects do you work on?",
-    answer: "I specialize in high-performance web platforms, custom automation systems, and complex data migrations. My work ranges from building secure recruitment platforms and e-commerce stores with local payment integrations to engineering private PaaS (Platform as a Service) and AI-ready automation hubs."
+    answer: (
+      <>
+        I specialize in high-performance web platforms, custom automation systems, and complex data migrations. My work ranges from building secure recruitment platforms like the{" "}
+        <Link href="/case-studies/gap-recruitment-full-stack" className="text-emerald-400 hover:underline">Gap Recruitment platform</Link> to engineering private PaaS solutions using{" "}
+        <Link href="/case-studies/coolify-private-paas-orchestration" className="text-emerald-400 hover:underline">Coolify</Link>.
+      </>
+    ),
+    plainText: "I specialize in high-performance web platforms, custom automation systems, and complex data migrations. My work ranges from building secure recruitment platforms like Gap Recruitment to engineering private PaaS solutions using Coolify."
   },
   {
     question: "How long does it take for a project to be completed?",
-    answer: "Project timelines vary based on complexity. A professional one-pager or small landing page can be delivered in about 7–10 days. More complex full-stack platforms or deep infrastructure setups typically take 3–6 weeks. I prioritize ship velocity without compromising on security or code quality."
+    answer: "Project timelines vary based on complexity. A professional one-pager or small landing page can be delivered in about 7–10 days. More complex full-stack platforms or deep infrastructure setups typically take 3–6 weeks. I prioritize ship velocity without compromising on security or code quality.",
+    plainText: "Project timelines vary based on complexity. A professional one-pager or small landing page can be delivered in about 7–10 days. More complex full-stack platforms or deep infrastructure setups typically take 3–6 weeks. I prioritize ship velocity without compromising on security or code quality."
   },
   {
     question: "What is a Full-Stack Developer?",
-    answer: "A full-stack developer is an engineer who can handle both the frontend (user interface, styling, client-side logic) and the backend (servers, databases, APIs, server-side logic). This allows for a unified architectural vision and faster delivery as one person understands how the entire system connects."
+    answer: "A full-stack developer is an engineer who can handle both the frontend (user interface, styling, client-side logic) and the backend (servers, databases, APIs, server-side logic). This allows for a unified architectural vision and faster delivery as one person understands how the entire system connects.",
+    plainText: "A full-stack developer is an engineer who can handle both the frontend and the backend. This allows for a unified architectural vision and faster delivery."
   },
   {
     question: "What is a Headless CMS (like Strapi)?",
-    answer: "A headless CMS is a 'content-only' database that delivers your text and images via an API. Unlike traditional builders, it decouples your content from your design. This means you can update your website text through an easy dashboard, while the frontend remains lightning-fast and benefits from the latest tech stack (like Next.js)."
+    answer: (
+      <>
+        A headless CMS is a 'content-only' database that delivers your text and images via an API. Unlike traditional builders, it decouples your content from your design. This means you can update your website text through an easy dashboard, as seen in my{" "}
+        <Link href="/case-studies/strapi-headless-cms-creative-autonomy" className="text-emerald-400 hover:underline">Strapi SEO case study</Link>, while the frontend remains lightning-fast.
+      </>
+    ),
+    plainText: "A headless CMS is a content-only database that delivers content via an API. It decouples content from design, allowing for easier updates and faster frontends, as seen in my Strapi SEO case study."
   },
   {
     question: "What is the difference between DevOps and GitOps?",
-    answer: "DevOps is a broad cultural and technical shift to automate the building, testing, and releasing of software. GitOps is a specialized subset of DevOps where Git is used as the 'single source of truth' for infrastructure. In a GitOps workflow, any change pushed to a specific Git branch is automatically applied to your live servers."
+    answer: "DevOps is a broad cultural and technical shift to automate the building, testing, and releasing of software. GitOps is a specialized subset of DevOps where Git is used as the 'single source of truth' for infrastructure. In a GitOps workflow, any change pushed to a specific Git branch is automatically applied to your live servers.",
+    plainText: "DevOps is automated building and testing. GitOps uses Git as the single source of truth for infrastructure changes."
   },
   {
     question: "What are the different types of SEO?",
-    answer: "SEO is generally categorized into three areas: 1. Technical SEO (site speed, mobile-friendliness, indexing, and schema markup); 2. On-Page SEO (content quality, keyword optimization, and meta tags); and 3. Off-Page SEO (backlinks and social signals). I primarily focus on the Technical and On-Page aspects to ensure search engines can crawl and understand your site perfectly."
+    answer: (
+      <>
+        SEO is categorized into three areas: 1. Technical SEO (indexing and schema); 2. On-Page SEO (keywords and meta tags); and 3. Off-Page SEO. I focus on the Technical and On-Page aspects, which helped improve inquiry rates in the{" "}
+        <Link href="/case-studies/urbanac-cleaning-one-pager" className="text-emerald-400 hover:underline">Urbanac Cleaning project</Link>.
+      </>
+    ),
+    plainText: "SEO has Technical, On-Page, and Off-Page categories. I focus on Technical and On-Page aspects to improve search results, as shown in the Urbanac Cleaning project."
   },
   {
     question: "Why should I use Next.js instead of standard React?",
-    answer: "Next.js is a framework built on top of React that adds powerful features like Server-Side Rendering (SSR) and Static Site Generation (SSG). This results in significantly faster load times, better SEO (since the content is pre-rendered for search engines), and a superior developer experience."
+    answer: "Next.js is a framework built on top of React that adds powerful features like Server-Side Rendering (SSR) and Static Site Generation (SSG). This results in significantly faster load times, better SEO, and a superior developer experience.",
+    plainText: "Next.js adds Server-Side Rendering and Static Site Generation to React, resulting in faster speeds and better SEO."
   },
   {
     question: "What is JSON-LD and why is it important for my site?",
-    answer: "JSON-LD (JSON for Linked Data) is a standardized format for providing structured data to search engines. It helps Google understand the context of your page (e.g., that it's a Case Study, a Product, or a Person), which can lead to 'rich snippets' like star ratings or special previews in search results."
+    answer: "JSON-LD (JSON for Linked Data) is a standardized format for providing structured data to search engines. It helps Google understand the context of your page, which can lead to 'rich snippets' like special previews in search results.",
+    plainText: "JSON-LD provides structured data to search engines, helping them understand your page context and enabling rich snippets."
   },
   {
     question: "What are the benefits of a self-hosted automation platform like n8n?",
-    answer: "Self-hosting your automation (using tools like n8n) allows you to eliminate 'per-task' subscription fees found in platforms like Zapier. It also ensures absolute data sovereignty, as your sensitive business data stays on your own private server rather than passing through a third-party service."
+    answer: (
+      <>
+        Self-hosting your automation (using tools like{" "}
+        <Link href="/case-studies/n8n-workflow-automation-systems" className="text-emerald-400 hover:underline">n8n</Link>) allows you to eliminate 'per-task' subscription fees. It also ensures absolute data sovereignty, keeping your sensitive data on your own private server.
+      </>
+    ),
+    plainText: "Self-hosting automation with n8n eliminates per-task fees and ensures absolute data sovereignty."
   },
   {
     question: "What is a Private PaaS (like Coolify)?",
-    answer: "A Private PaaS (Platform as a Service) gives you the convenience of platforms like Vercel or Heroku but on your own private servers. It automates deployments, manages SSL certificates, and monitors your applications, all while giving you full control over your resources and reducing hosting costs."
+    answer: (
+      <>
+        A Private PaaS gives you the convenience of platforms like Vercel but on your own private servers. It automates deployments and manages SSL, providing full control over resources as detailed in my{" "}
+        <Link href="/case-studies/coolify-private-paas-orchestration" className="text-emerald-400 hover:underline">Coolify case study</Link>.
+      </>
+    ),
+    plainText: "A Private PaaS provides Vercel-like convenience on private servers, offering full control over resource management."
   },
   {
     question: "How do you handle website security?",
-    answer: "I implement security-first architectures using industry standards like HSTS (strict HTTPS), CSP (Content Security Policy) to prevent cross-site scripting, and CORS (Cross-Origin Resource Sharing) to restrict unauthorized data access. I also use server-side hardening on NGINX and Docker."
+    answer: "I implement security-first architectures using industry standards like HSTS, CSP to prevent cross-site scripting, and CORS to restrict unauthorized data access. I also use server-side hardening on NGINX and Docker.",
+    plainText: "I use standards like HSTS, CSP, and CORS alongside server hardening on NGINX and Docker to ensure website security."
   },
   {
     question: "What is ISR (Incremental Static Regeneration)?",
-    answer: "ISR is a Next.js feature that allows you to update static content after you've built your site, without needing a full redeploy. For example, if you change a price in your CMS, ISR can update just that page in the background while the rest of the site stays static and fast."
+    answer: "ISR is a Next.js feature that allows you to update static content after you've built your site, without needing a full redeploy. This ensures your content stays current while maintaining the performance of a static site.",
+    plainText: "ISR allows updating static content after building the site, keeping content fresh without sacrificing speed."
   },
   {
     question: "Can I manage my own content without knowing how to code?",
-    answer: "Absolutely. I build systems where all frontend content is served from a CMS (like Strapi). You'll have a user-friendly dashboard similar to a word processor where you can edit text, upload images, and manage SEO tags. Your changes go live instantly without my intervention."
+    answer: "Absolutely. I build systems where all frontend content is served from a CMS like Strapi. You'll have a user-friendly dashboard where you can edit text, upload images, and manage SEO tags instantly.",
+    plainText: "Yes, I build systems with user-friendly CMS dashboards like Strapi so you can manage text, images, and SEO without coding."
   },
   {
     question: "What is Docker and why do you use it for deployment?",
-    answer: "Docker is a tool that 'packages' an application and all its dependencies into a container. This ensures the app runs exactly the same way on my machine as it does on your production server, eliminating the 'it works on my machine' problem and making deployments highly reliable."
+    answer: "Docker packages an application and all its dependencies into a container. This ensures the app runs exactly the same way on any environment, eliminating deployment inconsistencies and making systems highly reliable.",
+    plainText: "Docker containerizes applications to ensure they run consistently across all environments, increasing reliability."
   },
   {
     question: "What is the importance of structured data in Case Studies?",
-    answer: "Adding CaseStudy schema via JSON-LD allows search engines to identify your work as professional evidence of expertise. This helps your projects appear in specific search queries related to the problems you've solved, increasing your authority in those niches."
+    answer: "Adding CaseStudy schema via JSON-LD allows search engines to identify your work as professional evidence of expertise, helping your projects appear in specific search queries related to the problems you've solved.",
+    plainText: "CaseStudy schema helps search engines recognize your projects as evidence of expertise, improving search relevance."
   },
   {
     question: "Do you provide ongoing maintenance after a project is launched?",
-    answer: "Yes. While I build systems to be autonomous and self-healing, I offer maintenance packages for regular security updates, dependency management, and performance monitoring to ensure your platform remains at peak efficiency as it scales."
+    answer: "Yes. While I build systems to be autonomous and self-healing, I offer maintenance packages for regular security updates, dependency management, and performance monitoring to ensure peak efficiency.",
+    plainText: "Yes, I offer maintenance packages for security, dependency management, and performance monitoring to keep systems efficient."
   },
   {
     question: "What is Technical SEO?",
-    answer: "Technical SEO refers to website and server optimizations that help search engine spiders crawl and index your site more effectively. This includes optimizing your site's architecture, improving page speed, ensuring mobile-friendliness, and implementing correct robots.txt and sitemap configurations."
+    answer: "Technical SEO refers to website and server optimizations that help search engine spiders crawl and index your site more effectively, including optimizations for site architecture, page speed, and mobile-friendliness.",
+    plainText: "Technical SEO involves optimizing site architecture, speed, and mobile-readiness to help search engines crawl and index better."
   },
   {
     question: "How do you integrate local payments like M-Pesa?",
-    answer: "I use custom Node.js scripts or middleware to connect with the Safaricom Daraja API. This allows for automated STK pushes, real-time transaction verification, and seamless synchronization with your inventory or order management system."
+    answer: (
+      <>
+        I use custom Node.js scripts to connect with the Safaricom Daraja API. This was used to automate catalog operations for{" "}
+        <Link href="/case-studies/zoho-pharmacy-ecommerce" className="text-emerald-400 hover:underline">Browns Pharmacy</Link>, enabling real-time transaction verification.
+      </>
+    ),
+    plainText: "I use Node.js and the Safaricom Daraja API for local payments like M-Pesa, as seen in the Browns Pharmacy project."
   },
   {
     question: "What is the benefit of a standalone Next.js build?",
-    answer: "A 'standalone' build only includes the necessary files needed to run the application in production. This makes the final deployment package much smaller and more efficient, which is ideal for containerized environments like Docker and leads to faster startup times."
+    answer: "A 'standalone' build only includes the necessary files needed to run the application in production, making the final deployment package smaller and more efficient for containerized environments like Docker.",
+    plainText: "A standalone build optimizes the deployment package by including only necessary files, making it ideal for Docker."
   },
   {
     question: "How do you ensure a site is fast for mobile users?",
-    answer: "I prioritize mobile performance through responsive design, image optimization (using Next.js Image component), efficient caching strategies, and by minimizing the amount of JavaScript sent to the client. I aim for high Core Web Vitals scores across all devices."
+    answer: "I prioritize mobile performance through responsive design, image optimization, efficient caching strategies, and by minimizing the amount of JavaScript sent to the client.",
+    plainText: "I ensure mobile speed through responsive design, image optimization, caching, and minimizing client-side JavaScript."
   }
 ];
 
@@ -101,7 +153,7 @@ export default function FAQPage() {
       "name": f.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": f.answer
+        "text": f.plainText
       }
     }))
   };

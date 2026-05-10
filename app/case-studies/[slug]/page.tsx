@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, Globe } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Globe, Tag } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
+import RelatedStudies from "@/components/RelatedStudies";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { fetchCaseStudies, getCaseStudyBySlug } from "@/lib/caseStudies";
+import { linkKeywords } from "@/lib/keywordLinker";
 import { siteMetadata } from "@/lib/siteMetadata";
 
 export const revalidate = false;
@@ -56,11 +59,16 @@ export async function generateMetadata({
 
 export default async function CaseStudyDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const study = await getCaseStudyBySlug(slug);
+  const allStudies = await fetchCaseStudies();
+  const studyIndex = allStudies.findIndex((s) => s.slug === slug);
+  const study = allStudies[studyIndex];
 
   if (!study) {
     notFound();
   }
+
+  const prevStudy = studyIndex > 0 ? allStudies[studyIndex - 1] : null;
+  const nextStudy = studyIndex < allStudies.length - 1 ? allStudies[studyIndex + 1] : null;
 
   const {
     title,
@@ -111,6 +119,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
             <div className="hero__grain"></div>
           </div>
           <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-8">
+            <Breadcrumbs items={[{ label: "Project portfolio", href: "/case-studies" }, { label: title }]} />
             <Link href="/case-studies" className="inline-flex items-center gap-2 text-sm text-white/70 transition hover:text-white">
               <ArrowLeft className="h-4 w-4" />
               Back to case studies
@@ -148,7 +157,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                   Case Study
                 </p>
                 <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">{title}</h1>
-                <p className="text-lg text-white/75">{HeroSummary}</p>
+                <p className="text-lg text-white/75">{linkKeywords(HeroSummary || "")}</p>
               </div>
             </div>
             {cardTags.length > 0 && (
@@ -183,7 +192,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
               <h3 className="text-lg font-semibold text-white">Problem</h3>
               <div className="mt-3 space-y-3 text-white/75">
                 {problemBlocks.map((paragraph, idx) => (
-                  <p key={`problem-${idx}`}>{paragraph}</p>
+                  <p key={`problem-${idx}`}>{linkKeywords(paragraph)}</p>
                 ))}
               </div>
             </article>
@@ -191,7 +200,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
               <h3 className="text-lg font-semibold text-white">Process</h3>
               <div className="mt-3 space-y-3 text-white/75">
                 {processBlocks.map((paragraph, idx) => (
-                  <p key={`process-${idx}`}>{paragraph}</p>
+                  <p key={`process-${idx}`}>{linkKeywords(paragraph)}</p>
                 ))}
               </div>
             </article>
@@ -199,7 +208,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
               <h3 className="text-lg font-semibold text-white">Outcome</h3>
               <div className="mt-3 space-y-3 text-white/75">
                 {outcomeBlocks.map((paragraph, idx) => (
-                  <p key={`outcome-${idx}`}>{paragraph}</p>
+                  <p key={`outcome-${idx}`}>{linkKeywords(paragraph)}</p>
                 ))}
               </div>
             </article>
@@ -258,6 +267,31 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
               Discuss a similar build
               <ArrowUpRight className="h-4 w-4" />
             </Link>
+          </div>
+
+          {/* Related Case Studies */}
+          <RelatedStudies currentSlug={slug} allStudies={allStudies} />
+
+          {/* Sequential Navigation */}
+          <div className="mt-16 flex flex-col sm:flex-row items-stretch gap-4">
+            {prevStudy && (
+              <Link
+                href={`/case-studies/${prevStudy.slug}`}
+                className="flex-1 rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:bg-white/[0.08] group"
+              >
+                <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold">Previous Project</span>
+                <h4 className="mt-2 text-white font-medium group-hover:text-emerald-400 transition-colors line-clamp-1">{prevStudy.title}</h4>
+              </Link>
+            )}
+            {nextStudy && (
+              <Link
+                href={`/case-studies/${nextStudy.slug}`}
+                className="flex-1 rounded-2xl border border-white/10 bg-white/5 p-6 transition-all hover:bg-white/[0.08] group text-right"
+              >
+                <span className="text-[10px] uppercase tracking-widest text-white/30 font-bold">Next Project</span>
+                <h4 className="mt-2 text-white font-medium group-hover:text-emerald-400 transition-colors line-clamp-1">{nextStudy.title}</h4>
+              </Link>
+            )}
           </div>
         </section>
       </main>

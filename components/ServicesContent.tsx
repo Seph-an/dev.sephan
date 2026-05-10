@@ -3,12 +3,14 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { ArrowRight, Mail } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 type ServiceSection = {
   title: string;
   description: string;
   items: string[];
+  evidence?: { label: string; href: string };
 };
 
 const fadeInVariants = {
@@ -69,6 +71,17 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
                   </span>
                 </div>
                 <p className="mt-3 text-sm text-white/70">{service.description}</p>
+                {service.evidence && (
+                  <div className="mt-4">
+                    <Link
+                      href={service.evidence.href}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 hover:text-emerald-300 transition-colors"
+                    >
+                      {service.evidence.label}
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
+                )}
                 <ul className="mt-4 flex flex-wrap gap-2 text-sm text-emerald-200">
                   {service.items.map((item) => (
                     <li
