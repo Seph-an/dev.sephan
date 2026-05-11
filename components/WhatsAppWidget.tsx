@@ -8,7 +8,7 @@ export default function WhatsAppWidget() {
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
-    <div className="fixed inset-x-0 bottom-8 z-[60] pointer-events-none">
+    <div className="fixed inset-x-0 bottom-4 z-[60] pointer-events-none">
       <div className="mx-auto max-w-7xl px-6 md:px-8 flex justify-end">
         <a
           href={whatsappUrl}
