@@ -156,9 +156,9 @@ export default function Hero() {
                       "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
                       "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
                       "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
-                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
+                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "m-pesa.webp", "mcp.webp",
                       "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
-                      "ollama-dark.svg", "openai-light.webp", "php-light.svg", "postgresql.svg", "postiz.webp",
+                      "ollama-dark.svg", "openai-light.webp", "pesapal.png", "php-light.svg", "postgresql.svg", "postiz.webp",
                       "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
                       "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
                       "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
@@ -180,9 +180,9 @@ export default function Hero() {
                       "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
                       "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
                       "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
-                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
+                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "m-pesa.webp", "mcp.webp",
                       "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
-                      "ollama-dark.svg", "openai-light.webp", "php-light.svg", "postgresql.svg", "postiz.webp",
+                      "ollama-dark.svg", "openai-light.webp", "pesapal.png", "php-light.svg", "postgresql.svg", "postiz.webp",
                       "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
                       "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
                       "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
