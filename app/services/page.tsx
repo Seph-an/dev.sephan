@@ -43,28 +43,28 @@ const serviceSections = [
 ];
 
 export const metadata: Metadata = {
-  title: "Engineering Services and Technical Capabilities",
+  title: "E-commerce Engineering Services and Technical Capabilities",
   description:
-    "Advanced technical services including high-performance API integrations, automation workflows, SEO optimization, and secure DevOps systems.",
+    "Advanced technical services for high-performance e-commerce systems, API integrations, and automated business workflows.",
   alternates: { canonical: "/services" },
   openGraph: {
-    title: "Engineering Services and Technical Capabilities",
+    title: "E-commerce Engineering Services and Technical Capabilities",
     description:
-      "Specialized engineering services for high-volume automation, resilient API integrations, and secure infrastructure management.",
+      "Specialized engineering services for high-conversion e-commerce, resilient API integrations, and automated workflows.",
     url: `${siteMetadata.siteUrl}/services`,
     type: "website",
   },
   twitter: {
-    title: "Engineering Services and Technical Capabilities",
+    title: "E-commerce Engineering Services and Technical Capabilities",
     description:
-      "Specialized engineering services for high-volume automation, resilient API integrations, and secure infrastructure management.",
+      "Specialized engineering services for high-conversion e-commerce, resilient API integrations, and automated workflows.",
   },
 };
 
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "Full-stack web, automation, and AI services",
+  name: "E-commerce, Automation, and AI Services",
   provider: {
     "@type": "Person",
     name: siteMetadata.siteAuthor,

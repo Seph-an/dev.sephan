@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "About Sephan",
     description:
-      "Systems thinker and full-stack engineer rooted in electrical engineering and security-first product delivery.",
+      "Systems thinker and e-commerce engineer rooted in electrical engineering and security-first platform delivery.",
   },
 };
 
@@ -28,7 +28,7 @@ const aboutSchema = {
   "@type": "AboutPage",
   name: "About Sephan",
   description:
-    "Story, principles, and full-stack skill set of Sephan, a Nairobi-based engineer building reliable web and automation systems.",
+    "Story, principles, and e-commerce engineering skill set of Sephan, a Nairobi-based engineer building reliable high-conversion platforms.",
   mainEntity: {
     "@type": "Person",
     name: siteMetadata.siteAuthor,

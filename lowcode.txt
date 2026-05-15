@@ -1,0 +1,86 @@
+SEPHAN
+Low-Code Automation Engineer | JavaScript Developer | Solutions Architect
+sephan@sephanly.com | https://github.com/Seph-an | Nairobi, Kenya
+
+EXECUTIVE SUMMARY
+Highly technical Low-Code Automation Engineer with over 3 years of experience in designing, building, and optimizing scalable and fault-tolerant automation workflows. Expert in n8n, Make.com, and Zapier, with a strong proficiency in writing custom JavaScript and Node.js logic to extend platform capabilities beyond standard modules. Proven track record in orchestrating end-to-end API integrations, managing complex data transformations, and ensuring 99.9% execution reliability across disparate SaaS ecosystems (CRM, Airtable, Notion). A self-directed problem solver focused on building resilient data pipelines and hybrid AI + human workflow orchestration that reduce operational costs and performance latency.
+
+CORE TECHNICAL SKILLS
+- Low-Code Platforms: n8n, Make.com, Zapier, Zoho Developer Tools, Strapi CMS.
+- Programming & Scripting: JavaScript (ES6+), Node.js, Python, TypeScript, Bash.
+- APIs & Connectivity: REST APIs, GraphQL, Webhooks, JSON, OAuth 2.0, Pagination, Rate Limits.
+- Data & SaaS: Airtable, Google Sheets, Notion, PostgreSQL, Redis, CRM Synchronization.
+- Reliability Engineering: Fault Tolerance, Error Handling, Fallback Mechanisms, Retries, Logging.
+- DevOps & Tools: Docker, CI/CD (GitHub Actions), PM2, NGINX, Linux (Ubuntu), Git.
+
+PROFESSIONAL EXPERIENCE (PROJECT CASE STUDIES)
+
+1. Advanced n8n Workflow Orchestration & Custom JavaScript Logic
+- Role: Lead Low-Code Engineer
+- Project: Scalable, self-hosted n8n environment for complex, multi-step business process automation.
+- Designed and implemented fault-tolerant automation workflows to synchronize real-time data across CRM, Slack, and internal REST APIs.
+- Authored custom JavaScript functions within n8n nodes to handle complex data transformations, JSON parsing, and technical edge cases.
+- Optimized event-based logic and webhooks to reduce performance latency and ensure seamless data flow across business tools.
+- Built robust error-handling and retry mechanisms to manage API failures and maintain 24/7 execution reliability.
+- Integrated messaging APIs (WhatsApp/Slack) to automate communication systems and real-time notification workflows.
+- Evaluated and troubleshot bottlenecks in high-frequency data pipelines to improve overall system throughput.
+
+2. Node.js Mass Data Integration & Synchronization Pipeline
+- Role: Integration Specialist
+- Project: Automated synchronization of 300,000+ documents from Manatal to Zoho using custom JS scripts.
+- Engineered a resilient Node.js integration script optimized for batch processing and high-volume data synchronization.
+- Managed strict REST API rate limits and implemented intelligent pagination logic to ensure uninterrupted data transfers.
+- Developed custom JS logic for data mapping and field validation, ensuring 100% data consistency between disparate schemas.
+- Implemented fault-tolerant features including exponential backoff and automated retries to handle transient connectivity issues.
+- Leveraged PM2 and DigitalOcean for process supervision, ensuring high availability and zero data loss during a 36-hour window.
+- Verified data integrity through automated post-transfer scripts, reconciling source and destination record counts.
+
+3. Zoho Commerce & Custom Scripting for E-commerce Operations
+- Role: Low-Code Developer
+- Project: Nationwide catalog and payment automation for a large-scale pharmacy e-commerce store.
+- Built automated data synchronization pipelines using a mix of Zoho Developer Tools and custom Node.js/Python scripts.
+- Integrated Safaricom M-Pesa REST API to synchronize real-time transaction data with internal inventory and CRM systems.
+- Developed custom JS logic to handle specialized product rules, including conditional "add to cart" functionality for prescription items.
+- Optimized catalog operations for 4,200+ SKUs by automating bulk data imports and real-time inventory updates.
+- Synchronized disparate data sources (Excel, CSV, APIs) into a unified e-commerce backend with robust validation mechanisms.
+- Reduced manual data entry by 90% through the implementation of event-driven automation across the SaaS ecosystem.
+
+4. Self-Hosted Automation Ecosystem & Background Workflows (Postiz)
+- Role: Backend & Automation Engineer
+- Project: Multi-container automation platform for high-volume social media and outreach orchestration.
+- Designed and implemented long-running background workflows using Temporal to ensure reliable data synchronization and execution.
+- Integrated multiple Social Media REST APIs and Webhooks to automate multi-platform scheduling and response handling.
+- Optimized system performance by implementing Redis caching and PostgreSQL indexing to handle stateful automation logic.
+- Built custom JavaScript modules to extend the platform's connectivity with third-party tools and internal webhooks.
+- Implemented robust failure-handling and logging systems to troubleshoot and resolve integration issues independently.
+- Managed the orchestration of diverse services using Docker and Coolify, ensuring a scalable and fault-tolerant environment.
+
+5. Microsoft Graph API & SharePoint Low-Code Ecosystem
+- Role: Solutions Architect
+- Project: Automated enterprise visitor management system integrated with M365 and SharePoint.
+- Integrated Microsoft Graph API with SharePoint lists to create a seamless, real-time data synchronization layer.
+- Built a secure PWA kiosk that leverages custom Node.js backend logic for Azure AD authentication and identity sync.
+- Automated multi-step communication workflows triggered by Graph API events, improving visitor check-in efficiency.
+- Developed custom error-handling mechanisms to manage SharePoint API quotas and rate limits during peak usage.
+- Implemented hardened security protocols (CSP, HSTS) to ensure secure data flow between the low-code backend and the frontend.
+- Evaluated and optimized data flow performance to reduce latency in real-time attendee verification.
+
+6. Headless CMS Orchestration & Frontend API Integration (Strapi)
+- Role: Content Systems Engineer
+- Project: Decoupled content ecosystem designed for high-performance data delivery and SEO autonomy.
+- Engineered a headless architecture using Strapi CMS to serve structured JSON data to a Next.js frontend via REST APIs.
+- Configured automated webhooks to trigger frontend rebuilds and cache purges upon content updates, ensuring real-time consistency.
+- Developed custom JS logic to automate the injection of JSON-LD schema and SEO metadata into the dynamic frontend.
+- Built a modular content system with role-based access controls to empower non-technical users while maintaining layout standards.
+- Optimized API response times through database indexing and efficient field selection, reducing latency for high-traffic pages.
+- Leveraged Docker and PM2 to ensure a reliable, self-healing deployment pipeline for both the CMS and the API layer.
+
+EDUCATION & CERTIFICATIONS
+- Bachelor’s Degree in Computer Science, IT, or related field
+- Advanced proficiency in Technical English (B2/C1)
+- Expert in JavaScript Automation & Fault-Tolerant Integration Systems
+
+PROFESSIONAL INTERESTS
+- Hybrid AI + Human Workflow Orchestration (AI Pilots)
+- Performance-Tuned Low-Code Architectures
+- Advanced API Connectivity & Event-Driven Systems

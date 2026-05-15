@@ -6,7 +6,7 @@ import { siteMetadata } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
-  description: "Common questions about full-stack development, headless CMS, SEO, DevOps, and how Sephan delivers high-impact software solutions.",
+  description: "Common questions about e-commerce systems, headless CMS, SEO, automation, and how Sephan delivers high-impact technical solutions.",
   alternates: { canonical: "/faqs" },
 };
 
@@ -15,22 +15,21 @@ const faqs = [
     question: "What kinds of projects do you work on?",
     answer: (
       <>
-        I specialize in high-performance web platforms, custom automation systems, and complex data migrations. My work ranges from building secure recruitment platforms like the{" "}
-        <Link href="/case-studies/gap-recruitment-full-stack" className="text-emerald-400 hover:underline">Gap Recruitment platform</Link> to engineering private PaaS solutions using{" "}
-        <Link href="/case-studies/coolify-private-paas-orchestration" className="text-emerald-400 hover:underline">Coolify</Link>.
+        I specialize in high-performance e-commerce platforms, custom automation systems, and complex API integrations. My work ranges from engineering secure recruitment platforms like the{" "}
+        <Link href="/case-studies/gap-recruitment-full-stack" className="text-emerald-400 hover:underline">Gap Recruitment platform</Link> to building automated inventory systems for e-commerce.
       </>
     ),
-    plainText: "I specialize in high-performance web platforms, custom automation systems, and complex data migrations. My work ranges from building secure recruitment platforms like Gap Recruitment to engineering private PaaS solutions using Coolify."
+    plainText: "I specialize in high-performance e-commerce platforms, custom automation systems, and complex API integrations. My work ranges from building secure recruitment platforms to automated e-commerce inventory systems."
   },
   {
     question: "How long does it take for a project to be completed?",
-    answer: "Project timelines vary based on complexity. A professional one-pager or small landing page can be delivered in about 7–10 days. More complex full-stack platforms or deep infrastructure setups typically take 3–6 weeks. I prioritize ship velocity without compromising on security or code quality.",
-    plainText: "Project timelines vary based on complexity. A professional one-pager or small landing page can be delivered in about 7–10 days. More complex full-stack platforms or deep infrastructure setups typically take 3–6 weeks. I prioritize ship velocity without compromising on security or code quality."
+    answer: "Project timelines vary based on complexity. A professional e-commerce landing page or small store can be delivered in about 10–14 days. More complex custom e-commerce systems or deep automation setups typically take 4–8 weeks. I prioritize ship velocity without compromising on security or conversion quality.",
+    plainText: "Project timelines vary. A professional e-commerce store can be delivered in about 10-14 days. Complex systems or automations typically take 4-8 weeks."
   },
   {
-    question: "What is a Full-Stack Developer?",
-    answer: "A full-stack developer is an engineer who can handle both the frontend (user interface, styling, client-side logic) and the backend (servers, databases, APIs, server-side logic). This allows for a unified architectural vision and faster delivery as one person understands how the entire system connects.",
-    plainText: "A full-stack developer is an engineer who can handle both the frontend and the backend. This allows for a unified architectural vision and faster delivery."
+    question: "What is an E-commerce Systems Engineer?",
+    answer: "An e-commerce systems engineer is a specialized developer who focuses on the entire technical ecosystem of an online store. This includes front-end performance (UX), back-end stability (APIs/Databases), secure payment integrations, and automated business workflows. The goal is to create a seamless, high-conversion machine rather than just a website.",
+    plainText: "An e-commerce systems engineer focuses on the entire technical ecosystem of an online store, including UX, APIs, payments, and automation, to create a high-conversion machine."
   },
   {
     question: "What is a Headless CMS (like Strapi)?",

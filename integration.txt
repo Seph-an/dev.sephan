@@ -1,0 +1,81 @@
+SEPHAN
+Full-Stack Engineer | Solutions Engineer | API Integration Specialist
+sephan@sephanly.com | https://github.com/Seph-an | Nairobi, Kenya
+
+EXECUTIVE SUMMARY
+Strategic and results-oriented Solutions Engineer with over 3 years of experience specializing in designing, building, and optimizing resilient API-driven ecosystems and high-volume data pipelines. Expert in Python and Node.js, with a deep focus on bridging the gap between fragmented SaaS platforms and automated business workflows. Proven track record in orchestrating self-hosted automation hubs (n8n, Temporal), executing mass database synchronization (300k+ records), and engineering fault-tolerant system integrations. A self-directed problem solver adept at leveraging structured thinking to ensure data consistency, manage rate limits, and implement robust failure handling in hybrid AI/Human environments.
+
+CORE TECHNICAL SKILLS
+- Languages: Python, JavaScript, TypeScript, Bash, SQL.
+- APIs & Connectivity: REST APIs, GraphQL, Webhooks, OAuth 2.0, JSON, Pagination, Rate Limits, Auth.
+- Automation & Orchestration: n8n, Temporal, Redis, PostgreSQL, Elasticsearch.
+- Data Engineering: Real-time & Batch Data Pipelines, ETL, Retries, Validation Mechanisms, Latency Optimization.
+- DevOps & Infrastructure: Docker, CI/CD (GitHub Actions), NGINX, PM2, DigitalOcean, Linux (Ubuntu).
+- SaaS Ecosystems: CRM Integration, Airtable, Google Sheets, Notion, Messaging APIs (WhatsApp).
+
+PROFESSIONAL EXPERIENCE (PROJECT CASE STUDIES)
+
+1. Scalable Business Process Automation & Data Synchronization Hub (n8n)
+- Role: Lead Integration Engineer
+- Project: High-performance, self-hosted n8n environment to synchronize complex data flows across CRM (Zoho), Slack, and internal REST APIs.
+- Designed and built robust, multi-node conditional workflows to automate real-time data synchronization between disparate SaaS platforms.
+- Optimized integration workflows to handle high-volume data pipelines, effectively eliminating per-task overhead and latency.
+- Implemented custom validation mechanisms and failure handling protocols to ensure 100% data consistency across business systems.
+- Integrated various third-party Webhooks and Messaging APIs to facilitate automated event-driven communication and reporting.
+- Orchestrated the entire stack using Docker and Coolify, ensuring absolute data sovereignty and system reliability for scalable systems.
+- Evaluated and troubleshot complex data exchange formats (JSON) to ensure fault-tolerant connectivity between core business systems.
+
+2. Mass Data Pipeline & Database Synchronization (Manatal to Zoho)
+- Role: Solutions Architect
+- Project: Automated end-to-end migration and synchronization of 300,000+ documents and records using Python and Node.js scripts.
+- Built a resilient two-stage Node.js data pipeline optimized for high-performance throughput and minimal latency during large-scale batch processing.
+- Managed complex REST API rate limits and implemented sophisticated pagination logic to ensure uninterrupted data flow and quota compliance.
+- Engineered fault-tolerant scripts using exponential backoff and automated retries to handle transient API failures and connection timeouts gracefully.
+- Conducted comprehensive post-transfer verification and data cleansing to validate data integrity across 100% of the migrated JSON records.
+- Deployed and supervised the pipeline using PM2 on DigitalOcean, maintaining zero data loss over a continuous 36-hour synchronization window.
+
+3. Fault-Tolerant Social Media Automation & Messaging API Integration (Postiz)
+- Role: Backend & Integration Engineer
+- Project: Self-hosted automation ecosystem integrated with multiple Social Media REST APIs and communication webhooks.
+- Designed and implemented background workflows using Temporal to manage long-running integration tasks and guarantee reliable event delivery.
+- Integrated real-time Webhooks for automated response handling from third-party ad platforms, significantly reducing manual engagement through outreach automation.
+- Optimized system performance to address latency issues, ensuring fast response times for high-frequency API authentication and OAuth requests.
+- Leveraged Redis for high-speed caching and PostgreSQL for relational data storage to support complex, stateful data synchronization logic.
+- Evaluated and improved data flow performance across SaaS tools, addressing failure handling for scalable system integration.
+
+4. E-commerce API Integration & Local Payment Synchronization (Browns Pharmacy)
+- Role: Full-Stack Integration Specialist
+- Project: Nationwide catalog synchronization across Zoho Commerce, Zoho Inventory, and local M-Pesa REST API gateways.
+- Built automated data cleansing and batch import pipelines using Python and Node.js, reducing manual catalog management by over 90%.
+- Integrated Safaricom M-Pesa REST API to synchronize real-time transaction data with internal accounting and inventory databases.
+- Developed custom validation logic to ensure real-time data consistency between warehouse inventory levels and front-end product availability.
+- Optimized the checkout workflow by implementing conditional logic for prescription-only items, ensuring strict regulatory compliance.
+- Managed API rate limits and data exchange formats (JSON) to facilitate seamless connectivity between vendor systems and the core store.
+
+5. Enterprise Identity Integration & Communication Workflow (Gap Recruitment)
+- Role: Solutions Engineer
+- Project: Microsoft Graph API and SharePoint integration for automated high-traffic recruitment and communication workflows.
+- Built a secure PWA kiosk that connects to Azure AD for real-time authentication and cross-platform identity synchronization.
+- Automated outreach and notification workflows triggered by real-time arrival events, improving stakeholder communication efficiency through Messaging APIs.
+- Ensured secure data flow by implementing hardened API security protocols including Content Security Policy (CSP), HSTS, and robust failure handling.
+- Developed robust error handling for Microsoft 365 API quotas and rate limits to prevent system downtime during peak recruitment periods.
+- Evaluated integration between core business systems to ensure reliable data flow and consistency across the Microsoft 365 ecosystem.
+
+6. Private PaaS Orchestration & CI/CD Deployment Pipeline (Coolify)
+- Role: DevOps & Infrastructure Engineer
+- Project: Centralized orchestration layer to automate the deployment of 10+ integration services and REST APIs on a private VPS.
+- Designed and built a centralized management platform to evaluate and improve data pipeline performance and latency.
+- Optimized Git-to-Deploy workflows using GitHub Actions CI/CD to ensure consistent and reliable delivery of API code updates.
+- Implemented automated SSL termination, health checks, and self-healing container policies to guarantee 99.9% uptime for business-critical integrations.
+- Leveraged NGINX and Traefik as reverse proxies to manage traffic flow, manage rate limits, and secure external API endpoints.
+- Developed custom Bash scripts for infrastructure-as-code automation, ensuring fault-tolerant deployments for all synchronized services.
+
+EDUCATION & CERTIFICATIONS
+- Bachelor’s Degree in Computer Science (or related technical field)
+- Advanced proficiency in Technical English (B2/C1)
+- Expert in API Security & Fault-Tolerant System Architecture
+
+PROFESSIONAL INTERESTS
+- Hybrid AI+Human Automation Systems & AI Pilots
+- Real-time Data Pipeline & Database Synchronization Optimization
+- Open-Source Integration & Connectivity Frameworks

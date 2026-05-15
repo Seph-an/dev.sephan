@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
-    default: `${siteMetadata.siteName} · ${siteMetadata.brandTagline}`,
+    default: `${siteMetadata.siteName} · E-commerce Systems Engineer`,
     template: `%s | ${siteMetadata.siteName}`,
   },
   description: siteMetadata.defaultDescription,
@@ -48,6 +48,14 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  category: "technology",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#10b981",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

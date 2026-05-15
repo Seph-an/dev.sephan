@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     url: `${siteMetadata.siteUrl}/case-studies/${study.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: 0.7,
+    priority: 0.8,
   }))
 
   return [
@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${siteMetadata.siteUrl}/about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${siteMetadata.siteUrl}/services`,

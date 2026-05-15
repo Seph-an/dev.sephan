@@ -1,0 +1,79 @@
+SEPHAN
+Web Designer | UI/UX Specialist | Frontend Design Engineer
+sephan@sephanly.com | https://github.com/Seph-an | Nairobi, Kenya
+Portfolio: [Your Portfolio Link Here]
+
+EXECUTIVE SUMMARY
+Creative and conversion-minded Web Designer with over 3 years of experience in designing high-converting marketing sites, landing pages, and complex digital platforms. Expert in Figma, specializing in auto-layout, design systems, and structured UI components. Proven track record in translating textual briefs into production-ready web designs that balance aesthetic polish with technical performance. Adept at cross-platform responsive design, developer handoff, and maintaining absolute visual consistency in hybrid AI/Human production environments.
+
+CORE TECHNICAL SKILLS
+- Design Tools: Figma (Auto-layout, Components, Prototyping), Canva, Adobe Suite.
+- UI/UX Design: Responsive Web Design, Layout Standards, Wireframing, User Centric Design, Conversion Optimization.
+- Systems & Standards: Design Systems, Asset Packaging, Specification Detailing, Visual Consistency.
+- Frontend Knowledge: HTML5, CSS3 (TailwindCSS), React.js, Next.js, Webflow, Framer.
+- Visual Assets: Production-ready Assets, Social Media Visuals, SVG Optimization, Brand Alignment.
+
+PROFESSIONAL EXPERIENCE (PROJECT CASE STUDIES)
+
+1. Gap Recruitment Full-Stack Platform & Brand Identity
+- Role: Lead Web Designer & UI/UX Specialist
+- Project: Modernizing a top-tier recruitment agency’s digital presence with a secure, scalable, and visually compelling platform.
+- Designed a comprehensive UI system in Figma using auto-layout and reusable components to ensure layout standards across 50+ pages.
+- Translated complex recruitment workflows into high-converting landing pages and a user-centric job board interface.
+- Implemented a mobile-first responsive design strategy, ensuring perfect visual consistency across all device breakpoints.
+- Packaged production-ready assets and detailed specifications for developer handoff, minimizing implementation latency.
+- Optimized visual clarity and spacing to improve readability and user engagement on high-traffic content pages.
+- Maintained absolute brand consistency between the web platform, marketing PDFs, and social media materials.
+
+2. Urbanac Cleaning Company - High-Converting One-Pager
+- Role: UI/UX Designer
+- Project: Conversion-driven one-page website designed to boost credibility and win premium corporate bids.
+- Designed a high-impact, professional layout from a textual brief, focusing on conversion-minded sections and visual hierarchy.
+- Leveraged Figma components to build a scalable layout that emphasizes layout standards and professional aesthetics.
+- Crafted a responsive web design that ensures a seamless experience for mobile and desktop corporate stakeholders.
+- Prepared production-ready assets and optimized SVG graphics to ensure fast load times and crisp visual performance.
+- Balanced white space and typography to create a clean, trustworthy UI that directly increased client inquiries.
+
+3. InvoiceNow - Tool-Based UI Design & UX Workflow
+- Role: Product Designer (UI/UX)
+- Project: Web-based branded quotation and invoice generator tool with real-time preview functionality.
+- Designed a structured, user-centric interface focused on clarity, ease of use, and professional document output.
+- Built a flexible design system in Figma to handle various user-input states and multi-currency formatting layouts.
+- Optimized the UX workflow to allow users to generate professional-grade, production-ready PDFs in under 60 seconds.
+- Ensured cross-platform responsiveness for a tool that is frequently used on tablets and mobile devices in the field.
+- Implemented consistent layout standards and spacing to maintain a polished, enterprise-grade aesthetic.
+
+4. Browns Pharmacy - Large Scale E-commerce UI & Navigation
+- Role: E-commerce Designer
+- Project: UX/UI overhaul for a local pharmacy store managing a 4,200+ SKU catalog.
+- Designed a clean, compliant shopping flow and navigation system to handle massive product categories without overwhelming users.
+- Created conversion-driven landing pages for various health categories, focusing on visual alignment and brand trust.
+- Implemented responsive grid layouts that adapt the dense product catalog for seamless mobile shopping experiences.
+- Produced production-ready assets and visual materials for digital marketing and social media integration.
+- Collaborated on the design of specialized prescription-only shopping logic to ensure regulatory clarity and UX flow.
+
+5. Case Study Portfolio - Interactive & Animated UI Shell
+- Role: Interactive Web Designer
+- Project: Custom-built portfolio shell featuring animated transitions and high-fidelity visual storytelling.
+- Designed an interactive UI shell in Figma, focusing on layout standards and sophisticated transition prototypes.
+- Implemented an animated, responsive design using TailwindCSS and Framer Motion to translate static designs into life-like web experiences.
+- Packaged and optimized assets for 6+ distinct case studies, ensuring production-ready visual consistency throughout the site.
+- Maintained a user-centric focus by balancing aesthetic polish with accessible navigation and clear call-to-action (CTA) zones.
+
+6. Strapi CMS Integration & SEO Design Strategy
+- Role: Content & UI Designer
+- Project: Headless CMS implementation focused on client editorial autonomy and real-time SEO management.
+- Designed a modular content system that allows non-technical users to update landing pages while maintaining layout standards.
+- Created production-ready components that dynamically render CMS data into high-converting front-end layouts.
+- Ensured visual consistency across various content types (blogs, landing pages) through a centralized design system.
+- Balanced SEO-driven textual content with professional visual layouts to maintain brand alignment and search visibility.
+
+EDUCATION & CERTIFICATIONS
+- Bachelor’s Degree in Graphic Design, HCI, or Computer Science (or related field)
+- Advanced proficiency in Technical English (B2/C1)
+- Expert in Figma Design Systems & Responsive Layout Standards
+
+PROFESSIONAL INTERESTS
+- AI-Collaborative Design Systems (Figma + AI Pilots)
+- Conversion-Driven UI/UX Design Patterns
+- High-Performance Frontend Implementation

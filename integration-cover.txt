@@ -1,0 +1,20 @@
+Dear Toloka AI / Mindrift Team,
+
+I am a Full-Stack Engineer with 3+ years of experience specializing in resilient API integrations and automation. I am eager to join the Mindrift/Tendem project as a Freelance Integration Developer (AI Pilot).
+
+My expertise lies in building fault-tolerant data pipelines and synchronizing complex SaaS ecosystems. A recent highlight includes architecting a Node.js pipeline to migrate 300,000+ documents between APIs. By implementing exponential backoff and custom retry logic, I achieved zero data loss while navigating strict rate limits—demonstrating the "structured thinking" and reliability required for this role.
+
+Key technical highlights:
+- Proficient in Python, JavaScript, and designing robust REST API/Webhook integrations.
+- Expert in n8n and Make.com, often extending platforms with custom JS for complex data transformations.
+- Deep experience with SaaS connectivity (Airtable, CRMs, Google Sheets) and JSON-driven workflows.
+- Experience integrating LLMs (OpenAI) into automated decision pipelines.
+
+As a self-directed problem solver, I am ready to evaluate and optimize the connectivity between your core systems and AI agents. Thank you for your time and consideration.
+
+Best regards,
+
+Sephan
+Full-Stack Engineer | API Integration Specialist
+sephan@sephanly.com | https://github.com/Seph-an
+Portfolio: https://dev.sephan.co.ke

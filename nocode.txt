@@ -1,0 +1,81 @@
+SEPHAN
+No-Code Automation Specialist | Solutions Architect | API Pilot
+sephan@sephanly.com | https://github.com/Seph-an | Nairobi, Kenya
+
+EXECUTIVE SUMMARY
+Strategic and results-oriented No-Code Automation Specialist with over 3 years of experience in architecting fault-tolerant workflows and data pipelines. Expert in designing complex, multi-step automations using platforms like n8n, Make.com, and Zapier to bridge fragmented SaaS ecosystems. Highly proficient in integrating REST APIs, Webhooks, and LLMs (OpenAI/Claude) into decision-driven workflows. A self-directed problem solver adept at ensuring data integrity through structured JSON handling, routers, and conditional logic. Experienced in building scalable "AI Pilot" systems where human expertise guides automated agents for maximum operational efficiency.
+
+CORE TECHNICAL SKILLS
+- Automation Platforms: n8n, Make.com, Zapier, Temporal.
+- Structured Data & SaaS: Airtable, Google Sheets, Notion, Zoho, CRM Integrations.
+- Technical Connectivity: REST APIs, Webhooks, JSON, OAuth 2.0, Authentication, Rate Limits.
+- Logic & Architecture: Multi-step Workflows, Routers, Filters, Conditional Logic, Decision Logic.
+- AI & Enrichment: LLM Integration (OpenAI/Claude), Data Pipelines, Enrichment Pipelines.
+- Reliability: Fault Tolerance, Error Handling, Retries, Validation Mechanisms, System Stability.
+
+PROFESSIONAL EXPERIENCE (PROJECT CASE STUDIES)
+
+1. Scalable Business Process Automation & Multi-Step Workflows (n8n)
+- Role: Lead Automation Architect
+- Project: Self-hosted n8n environment for real-time synchronization across CRM, Slack, and internal data systems.
+- Architected and optimized complex, multi-step workflows using routers and filters to handle diverse business logic.
+- Integrated multiple third-party REST APIs and Webhooks to ensure seamless data flow and connectivity between silos.
+- Designed decision-driven logic to automate lead routing, notification systems, and high-frequency data synchronization.
+- Implemented robust fault tolerance and error handling mechanisms to prevent data loss during API outages or rate limit hits.
+- Synchronized disparate SaaS platforms (Airtable, Google Sheets) into a unified, automated operations hub.
+- Managed structured data flows using JSON to ensure consistency and reliability across automated data pipelines.
+
+2. AI-Enrichment & Content Automation Pipeline (Postiz/Temporal)
+- Role: Integration Specialist
+- Project: Orchestrated a background automation system for high-volume content scheduling and AI-driven enrichment.
+- Integrated LLM APIs (OpenAI) into automated pipelines to perform real-time content analysis and decision logic.
+- Architected fault-tolerant background workflows using Temporal to manage long-running tasks and ensure 100% execution reliability.
+- Utilized Webhooks and REST APIs to connect social media platforms with centralized data repositories.
+- Optimized task queuing and retry logic to maintain system stability under high-volume load.
+- Refined automated communication systems to handle real-time event triggers and asynchronous data processing.
+
+3. Data Pipeline & Batch Synchronization (Manatal to Zoho)
+- Role: Solutions Architect
+- Project: Automated mass data migration and synchronization of 300,000+ records between SaaS platforms.
+- Designed and executed high-performance data pipelines focused on database synchronization and reliability.
+- Troubleshot complex API pagination and rate-limiting issues independently to ensure continuous data flow.
+- Built validation mechanisms to check data integrity and consistency between source and destination systems.
+- Utilized structured JSON formats to map and transform data accurately during massive batch processing windows.
+- Managed a 36-hour migration window with zero data loss using a self-directed, structured thinking approach.
+
+4. E-commerce Enrichment & Payment Automation (Browns Pharmacy)
+- Role: No-Code Developer
+- Project: Automated catalog synchronization and payment processing for a large-scale pharmacy e-commerce site.
+- Integrated Safaricom M-Pesa REST API with Zoho systems to automate real-time payment reconciliation and notifications.
+- Built enrichment pipelines to cleanse and synchronize a 4,200+ SKU catalog between inventory management and commerce platforms.
+- Designed conditional logic to handle regulated (prescription-only) items, ensuring compliance through automated workflows.
+- Leveraged Airtable-style data structures in Zoho Inventory to manage complex product variants and automated updates.
+- Streamlined order fulfillment processes by connecting diverse SaaS tools into a single, automated connectivity layer.
+
+5. Enterprise Identity Automation & Communication Systems (Gap Recruitment)
+- Role: Systems Architect
+- Project: Integrated Microsoft 365/SharePoint ecosystem for automated visitor management and communication.
+- Architected automated outreach workflows triggered by real-time arrival events via Microsoft Graph API and Webhooks.
+- Integrated Azure AD for real-time authentication, ensuring secure and reliable identity synchronization across platforms.
+- Built a connectivity layer between SharePoint lists and visitor-facing PWAs for instant data updates and reporting.
+- Evaluated and refined integration workflows to ensure 99.9% uptime and fault tolerance during peak usage hours.
+- Improved data consistency and reporting accuracy by automating the extraction and logging of attendance metrics.
+
+6. Private PaaS Orchestration & Process Optimization (Coolify)
+- Role: DevOps & Automation Engineer
+- Project: Centralized orchestration for 10+ automation services and APIs on a private VPS.
+- Scaled infrastructure to support high-volume data pipelines and automated Git-to-Deploy workflows.
+- Optimized system performance by monitoring latency and implementing self-healing container policies.
+- Centralized the management of multiple self-hosted no-code tools (n8n, Postiz) into a unified administration pane.
+- Developed custom Bash scripts to automate server maintenance and infrastructure-as-code deployments.
+- Evaluated system stability and performance to ensure a reliable foundation for all mission-critical automations.
+
+EDUCATION & CERTIFICATIONS
+- Bachelor’s Degree in Computer Science, IT, or related field
+- Advanced proficiency in Technical English (B2/C1)
+- Expert in No-Code Logic & Fault-Tolerant System Architecture
+
+PROFESSIONAL INTERESTS
+- Hybrid AI+Human Workflow Systems (AI Pilots)
+- Scalable No-Code Data Pipelines
+- LLM Integration & Decision Logic Automation

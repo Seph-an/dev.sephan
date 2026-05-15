@@ -2,15 +2,22 @@ import React from "react";
 import Link from "next/link";
 
 const KEYWORD_MAP: Record<string, string> = {
+  "E-commerce": "/services",
+  "e-commerce": "/services",
   "API integrations": "/services",
   "DevOps": "/services",
   "automation": "/services",
   "SEO": "/services",
+  "Technical SEO": "/services",
   "Next.js": "/faqs",
+  "Next.js 15": "/faqs",
   "headless CMS": "/faqs",
   "Strapi": "/case-studies/strapi-headless-cms-creative-autonomy",
   "n8n": "/case-studies/n8n-workflow-automation-systems",
   "Coolify": "/case-studies/coolify-private-paas-orchestration",
+  "workflow automation": "/services",
+  "high-performance API": "/services",
+  "robust DevOps": "/services",
 };
 
 export function linkKeywords(text: string) {

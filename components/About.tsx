@@ -4,13 +4,13 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const skillGroups = [
-  { title: "Commerce / CMS", items: ["Shopify", "WordPress + WooCommerce", "Zoho Sites", "Zoho Commerce"] },
+  { title: "E-commerce Platforms", items: ["Shopify", "WordPress + WooCommerce", "Zoho Sites", "Zoho Commerce"] },
   { title: "Frontend", items: ["React", "TypeScript", "Next.js","Zustand", "Tailwind CSS", "Tanstack Query"] },
   { title: "Backend", items: ["Node.js", "Express", "Strapi", "PostgreSQL", "MongoDB", "Redis"] },
   { title: "SEO / Analytics", items: ["Technical SEO", "GC Console", "Google Analytics", "On-page SEO"] },
   { title: "DevOps", items: ["Docker", "Nginx", "PM2", "SSH", "GitHub Actions", "DigitalOcean"] },
   { title: "APIs", items: ["REST", "GraphQL","Websockets", "Webhooks", "n8n"] },
-  { title: "Full-Stack", items: ["Next.js + Strapi", "MERN", "SSR / ISR"] },
+  { title: "E-commerce Systems", items: ["Shopify + Liquid", "WooCommerce", "SSR / ISR", "Checkout Optimization"] },
   { title: "UI / UX", items: ["Figma", "Framer", "Prototyping", "Design Systems"] },
   { title: "VCS / Collaboration", items: ["Git", "GitHub"] },
 ];
@@ -70,7 +70,7 @@ export default function About() {
 
             <FadeIn delay={0.05}>
               <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight md:text-4xl">
-                Engineer blending hardware discipline with modern web craftsmanship.
+                E-commerce Engineer blending hardware discipline with modern web craftsmanship.
               </h2>
             </FadeIn>
 
@@ -135,14 +135,14 @@ export default function About() {
                 {skillGroups.map((group) => (
                   <FadeIn key={group.title} delay={0.05}>
                     <div className="rounded-xl border border-white/10 bg-white/5 p-4 backdrop-blur transition hover:bg-white/10">
-                      <h4 className="mb-2 text-[13px] font-semibold uppercase tracking-wide text-white/90">{group.title}</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <h3 className="mb-2 text-[13px] font-semibold uppercase tracking-wide text-white/90">{group.title}</h3>
+                      <ul className="flex flex-wrap gap-2">
                         {group.items.map((item) => (
-                          <span key={item} className="rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs text-white/85">
+                          <li key={item} className="rounded-md border border-white/15 bg-white/10 px-2.5 py-1 text-xs text-white/85">
                             {item}
-                          </span>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   </FadeIn>
                 ))}

@@ -38,11 +38,11 @@ export default function Hero() {
 
           <motion.h1 variants={item} className="text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl">
             Hi, I’m <span className="text-emerald-500">Sephan</span> ·
-            <span className="block">Full‑Stack Engineer & AI‑ready Problem Solver</span>
+            <span className="block">E‑commerce Systems Engineer & Automation Expert</span>
           </motion.h1>
 
           <motion.p variants={item} className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-white/75 md:text-lg">
-            I design and ship resilient web platforms with measurable business outcomes: faster load times, secure architectures, and developer‑friendly DX.
+            I design and ship high‑conversion e‑commerce platforms with measurable business outcomes: faster load times, secure architectures, and automated workflows.
           </motion.p>
 
           {/* Proof points */}
@@ -119,7 +119,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Sephan</h3>
-                    <p className="text-sm text-white/70">AI · Automation · DevOps</p>
+                    <p className="text-sm text-white/70">E-commerce · AI · Automation</p>
                     <p className="mt-1 flex items-center gap-1.5 text-xs text-white/60">
                       <MapPin className="h-3.5 w-3.5" /> Nairobi, KE
                     </p>
@@ -166,7 +166,7 @@ export default function Hero() {
                       <div key={`logo-1-${idx}`} className="flex shrink-0 items-center justify-center">
                         <Image
                           src={`/marquee/${logo}`}
-                          alt="tech logo"
+                          alt={`${logo.split(/[-.]/)[0]} technology`}
                           width={28}
                           height={28}
                           className="h-7 w-auto transition-all hover:scale-110"
@@ -190,7 +190,7 @@ export default function Hero() {
                       <div key={`logo-2-${idx}`} className="flex shrink-0 items-center justify-center">
                         <Image
                           src={`/marquee/${logo}`}
-                          alt="tech logo"
+                          alt={`${logo.split(/[-.]/)[0]} technology`}
                           width={28}
                           height={28}
                           className="h-7 w-auto transition-all hover:scale-110"

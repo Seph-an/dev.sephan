@@ -3,12 +3,14 @@ export const siteMetadata = {
   siteUrl: "https://dev.sephan.co.ke",
   siteAuthor: "Sephan",
   contactEmail: "hello@sephanly.com",
-  brandTagline: "Full stack engineer specializing in API integrations and DevOps",
+  brandTagline: "E-commerce Systems Engineer specializing in API integrations and automation",
   defaultDescription:
-    "Expert technical solutions for high-performance API integrations, automated workflows, and robust DevOps systems with measurable business outcomes.",
+    "Expert technical solutions for high-performance E-commerce systems, API integrations, and automated workflows with measurable business outcomes.",
   keywords: [
     "Sephan",
-    "Full stack Engineer",
+    "E-commerce Engineer",
+    "Shopify Developer",
+    "WooCommerce Specialist",
     "API integration",
     "automated workflows",
     "DevOps systems",
