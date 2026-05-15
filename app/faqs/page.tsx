@@ -201,7 +201,7 @@ export default function FAQPage() {
           <div className="mt-16 rounded-3xl border border-emerald-500/20 bg-emerald-500/5 p-8 text-center md:p-12">
             <h2 className="text-2xl font-semibold text-white">Still have questions?</h2>
             <p className="mt-3 text-white/70">
-              I’m always open to discussing technical architecture, project scopes, or how I can help solve your specific business challenges.
+              I’m always open to consulting on technical architecture, project scopes, or how I can help solve your specific business challenges.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a

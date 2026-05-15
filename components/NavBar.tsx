@@ -86,7 +86,7 @@ export default function NavBar() {
             >
               <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
                 <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
-                Discuss a Project
+                Consult on a project
               </a>
             </Button>
           </div>
@@ -137,7 +137,7 @@ export default function NavBar() {
             >
               <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
                 <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
-                Discuss a Project
+                Consult on a project
               </a>
             </Button>
           </div>
