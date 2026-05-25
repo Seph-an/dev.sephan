@@ -1,0 +1,53 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#020617"/>
+  
+  <!-- Decorative Gradients/Glows -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="600" cy="315" r="400" fill="url(#glow)"/>
+
+  <!-- Abstract Storefront / Digital Elements -->
+  <rect x="400" y="200" width="400" height="280" rx="20" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2" stroke-opacity="0.3"/>
+  <rect x="430" y="230" width="340" height="40" rx="8" fill="#10b981" fill-opacity="0.1"/>
+  <rect x="430" y="290" width="160" height="120" rx="12" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="610" y="290" width="160" height="120" rx="12" fill="#ffffff" fill-opacity="0.05"/>
+  
+  <!-- Floating E-commerce Icons -->
+  <!-- Cart -->
+  <g transform="translate(320, 180) scale(1.5)" opacity="0.8">
+    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3 6h18" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 10a4 4 0 0 1-8 0" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Dollar/Currency -->
+  <g transform="translate(820, 380) scale(2)" opacity="0.8">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#10b981" stroke-width="2"/>
+    <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 18V6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tag -->
+  <g transform="translate(850, 150) scale(1.5)" opacity="0.6">
+    <path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7 7h.01" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="600" y="560" font-family="sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
+    How to sell things online
+  </text>
+  <text x="600" y="595" font-family="sans-serif" font-size="18" font-weight="medium" fill="#10b981" text-anchor="middle" opacity="0.8">
+    A Technical Strategy Guide
+  </text>
+</svg>

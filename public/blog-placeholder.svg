@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="600" cy="315" r="400" fill="url(#g)"/>
+  <rect x="400" y="200" width="400" height="230" rx="20" fill="#1e293b" stroke="#10b981" stroke-width="2" stroke-opacity="0.3"/>
+  <path d="M540 280h120v20H540zM540 320h120v10H540zM540 345h80v10H540z" fill="#10b981" opacity="0.4"/>
+  <text x="600" y="520" font-family="sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle" opacity="0.9">SEPHAN BLOG</text>
+  <text x="600" y="560" font-family="sans-serif" font-size="20" fill="#10b981" text-anchor="middle" letter-spacing="4" opacity="0.6">E-COMMERCE · SYSTEMS · AUTOMATION</text>
+</svg>
