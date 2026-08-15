@@ -2,8 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Tag } from "lucide-react";
+import { ArrowUpRight, Search, Tag, X } from "lucide-react";
+import PaginationControls from "@/components/content/PaginationControls";
+
+const PAGE_SIZE = 6;
 
 type CaseStudy = {
   href: string;
@@ -19,13 +23,46 @@ export default function CaseStudiesAnimatedShell({
   featuredCaseStudies,
   showCta = true,
   label = "Selected Work",
+  enableBrowsing = false,
 }: {
   featuredCaseStudies: CaseStudy[];
   showCta?: boolean;
   label?: string;
+  enableBrowsing?: boolean;
 }) {
+  const [query, setQuery] = useState("");
+  const [tag, setTag] = useState("all");
+  const [page, setPage] = useState(1);
+  const sectionRef = useRef<HTMLElement>(null);
+  const tags = useMemo(
+    () => Array.from(new Set(featuredCaseStudies.flatMap((study) => study.tags))).sort((a, b) => a.localeCompare(b)),
+    [featuredCaseStudies],
+  );
+  const filteredStudies = useMemo(() => {
+    const term = query.trim().toLowerCase();
+    return featuredCaseStudies.filter((study) => {
+      const matchesTag = tag === "all" || study.tags.includes(tag);
+      const searchable = [study.title, study.teaser, ...study.tags].join(" ").toLowerCase();
+      return matchesTag && (!term || searchable.includes(term));
+    });
+  }, [featuredCaseStudies, query, tag]);
+  const displayedStudies = enableBrowsing
+    ? filteredStudies.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
+    : featuredCaseStudies;
+  const hasFilters = query.length > 0 || tag !== "all";
+
+  const resetFilters = () => {
+    setQuery("");
+    setTag("all");
+    setPage(1);
+  };
+  const updatePage = (nextPage: number) => {
+    setPage(nextPage);
+    sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
-    <section id="case-studies" className="relative isolate overflow-hidden bg-transparent py-16 text-white md:py-24">
+    <section ref={sectionRef} id="case-studies" className="relative isolate scroll-mt-24 overflow-hidden bg-transparent py-16 text-white md:py-24">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 md:flex-row md:items-center md:justify-between md:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-wide text-white/70">
@@ -51,11 +88,65 @@ export default function CaseStudiesAnimatedShell({
         )}
       </div>
 
+      {enableBrowsing && (
+        <div className="mx-auto mt-8 grid max-w-7xl gap-3 px-6 sm:grid-cols-[minmax(0,1fr)_minmax(12rem,0.35fr)_auto] md:px-8">
+          <label className="relative block">
+            <span className="sr-only">Search case studies</span>
+            <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/45" aria-hidden />
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => { setQuery(event.target.value); setPage(1); }}
+              placeholder="Search case studies"
+              className="min-h-11 w-full rounded-xl border border-white/10 bg-slate-950/60 py-2 pl-10 pr-3 text-sm text-white outline-none transition placeholder:text-white/40 focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/15"
+            />
+          </label>
+          <label>
+            <span className="sr-only">Filter case studies by technology</span>
+            <select
+              value={tag}
+              onChange={(event) => { setTag(event.target.value); setPage(1); }}
+              className="min-h-11 w-full rounded-xl border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/15"
+            >
+              <option value="all">All technologies</option>
+              {tags.map((item) => <option key={item} value={item}>{item}</option>)}
+            </select>
+          </label>
+          <button
+            type="button"
+            onClick={resetFilters}
+            disabled={!hasFilters}
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-white/10 px-4 text-sm font-medium text-white transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-35"
+          >
+            <X className="h-4 w-4" aria-hidden /> Reset
+          </button>
+        </div>
+      )}
+
+      {enableBrowsing && (
+        <p className="mx-auto mt-5 max-w-7xl px-6 text-sm text-white/55 md:px-8" aria-live="polite">
+          {filteredStudies.length} {filteredStudies.length === 1 ? "project" : "projects"} found
+        </p>
+      )}
       <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-6 px-6 md:grid-cols-2 lg:grid-cols-3 md:px-8">
-        {featuredCaseStudies.map((study, index) => (
-          <AnimatedCaseStudyCard key={study.title} {...study} transitionDelay={index * 0.1} />
+        {displayedStudies.map((study, index) => (
+          <AnimatedCaseStudyCard key={study.href} {...study} transitionDelay={index * 0.1} />
         ))}
       </div>
+      {enableBrowsing && displayedStudies.length === 0 && (
+        <div className="mx-auto mt-8 max-w-7xl px-6 text-center md:px-8">
+          <div className="rounded-2xl border border-dashed border-white/15 py-16">
+            <h3 className="text-xl font-semibold text-white">No matching case studies</h3>
+            <p className="mt-2 text-white/50">Try another search or clear the filters.</p>
+            {hasFilters && <button type="button" onClick={resetFilters} className="mt-5 text-sm font-semibold text-emerald-400 hover:text-emerald-300">Clear filters</button>}
+          </div>
+        </div>
+      )}
+      {enableBrowsing && (
+        <div className="mx-auto max-w-7xl px-6 md:px-8">
+          <PaginationControls currentPage={page} totalItems={filteredStudies.length} pageSize={PAGE_SIZE} onPageChange={updatePage} />
+        </div>
+      )}
     </section>
   );
 }

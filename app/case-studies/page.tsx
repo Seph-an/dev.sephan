@@ -97,6 +97,7 @@ export default async function CaseStudiesPage() {
                 "CS",
             }))}
             showCta={false}
+            enableBrowsing
           />
         </section>
       </main>

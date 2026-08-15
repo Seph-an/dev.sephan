@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { getBlogPosts } from "@/lib/blog";
-import BlogCard from "@/components/blog/BlogCard";
+import BlogBrowser from "@/components/blog/BlogBrowser";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { siteMetadata } from "@/lib/siteMetadata";
 
@@ -38,13 +38,7 @@ export default async function BlogPage() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post, index) => (
-            <BlogCard key={post.slug} post={post} index={index} />
-          ))}
-        </div>
-        
-        {posts.length === 0 && (
+        {posts.length > 0 ? <BlogBrowser posts={posts} /> : (
           <div className="flex flex-col items-center justify-center py-20 text-center">
             <div className="h-20 w-20 rounded-full bg-white/5 flex items-center justify-center mb-4">
               <span className="text-4xl">📚</span>
