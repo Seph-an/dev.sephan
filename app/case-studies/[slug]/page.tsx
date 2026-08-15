@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowUpRight, Globe, Tag } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CircleCheck, Globe } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
 import RelatedStudies from "@/components/RelatedStudies";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -91,21 +91,19 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
 
   const caseStudySchema = {
     "@context": "https://schema.org",
-    "@type": "CaseStudy",
+    "@type": ["Article", "CreativeWork"],
     name: title,
     description: HeroSummary ?? study.teaser,
     url: `${siteMetadata.siteUrl}/case-studies/${slug}`,
     keywords: cardTags,
     image: preview ? `${siteMetadata.siteUrl}${preview}` : `${siteMetadata.siteUrl}/Sephan-new.jpg`,
-    author: {
-      "@type": "Person",
-      name: siteMetadata.siteAuthor,
-      email: siteMetadata.contactEmail,
-    },
+    author: { "@id": siteMetadata.personId },
+    publisher: { "@id": siteMetadata.personId },
     inLanguage: "en",
     mainEntityOfPage: `${siteMetadata.siteUrl}/case-studies/${slug}`,
     isBasedOn: highlights.length ? highlights : undefined,
     articleSection: ["Problem", "Process", "Outcome"],
+    genre: "Case study",
   };
 
   return (
@@ -241,6 +239,19 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
             </div>
           )}
 
+          <aside className="rounded-2xl border border-sky-300/15 bg-sky-300/5 p-6 text-sm leading-6 text-white/65">
+            <div className="flex items-start gap-3">
+              <CircleCheck className="mt-0.5 h-5 w-5 shrink-0 text-sky-300" />
+              <div>
+                <h3 className="font-semibold text-white">Evidence and scope</h3>
+                <p className="mt-1">
+                  Results shown here come from the project records available for this engagement. Where a number is not shown,
+                  the case study describes delivered scope and observed outcomes without inventing a measurement.
+                </p>
+              </div>
+            </div>
+          </aside>
+
           <div className="flex flex-col gap-3 border-t border-white/10 pt-6 text-white/70 sm:flex-row sm:flex-wrap sm:items-center">
             <Link
               href="/case-studies"
@@ -261,7 +272,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
               </Link>
             )}
             <Link
-              href="mailto:sephan@sephanly.com"
+              href={`/contact/ecommerce-automation-audit?service=${encodeURIComponent(cardTags.join(", ") || "Similar e-commerce integration")}`}
               className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20 sm:w-auto"
             >
               Consult on a similar build

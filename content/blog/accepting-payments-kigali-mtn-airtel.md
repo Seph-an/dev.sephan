@@ -3,7 +3,11 @@ title: "Accepting payments in Kigali: A guide to MTN and Airtel Money for websit
 excerpt: "Everything Rwandan businesses need to know about integrating local mobile money into a modern checkout."
 tags: "Rwanda, Payments, MTN Mobile Money, Airtel Money, E-commerce"
 region: "Rwanda"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/accepting-payments-kigali-mtn-airtel.svg"
+imageAlt: "Accepting payments in Kigali: A guide to MTN and Airtel Money for websites"
 ---
 
 Kigali is rapidly becoming a leading tech hub in East Africa, and with this growth comes a massive opportunity for Rwandan merchants to reach customers through e-commerce. However, a "Global" store template often fails in Rwanda because it doesn't account for the local reality: mobile money is the primary way people pay. If your website only takes credit cards, you are excluding a huge portion of the market in Kigali and beyond.

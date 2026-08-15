@@ -3,7 +3,11 @@ title: "Selling beauty products in Cape Town: Why site speed is your best market
 excerpt: "How reducing your load time by 1 second can double your sales in the competitive SA fashion market."
 tags: "South Africa, Site Speed, E-commerce, UX, Cape Town"
 region: "South Africa"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/site-speed-ecommerce-cape-town.svg"
+imageAlt: "Selling beauty products in Cape Town: Why site speed is your best marketing"
 ---
 
 Cape Town is the creative heart of South Africa’s e-commerce scene, home to some of the country’s most innovative beauty and fashion brands. But in this highly competitive market, having a "pretty" website isn't enough. Your customers in Camps Bay, Constantia, or the City Bowl are often browsing on high-end mobile devices, and they expect a "native app" speed. If your beauty store takes more than 3 seconds to load, they will bounce to a competitor before they ever see your hero product. In this guide, we'll explore why site speed is the most effective marketing tool for Cape Town e-commerce.
@@ -16,7 +20,7 @@ From a technical perspective, this is measured by the **LCP (Largest Contentful 
 
 ### Technical Strategies for Lightning-Fast Loads
 
-To achieve world-class speed in the Cape Town market, we move beyond basic templates. We use modern frameworks like **Next.js 15**, which allows for Static Site Generation (SSG). This means your product pages are pre-rendered into lightweight HTML files that are stored "on the edge" (closer to the user). 
+To pursue strong speed in the Cape Town market, we move beyond basic templates. We use modern frameworks like **Next.js**, which supports Static Site Generation (SSG). This means product pages can be pre-rendered into lightweight HTML files and distributed closer to users.
 
 Key optimizations include:
 1. **Next.js Image Component**: Automatically serving WebP images that are 30% smaller than JPEGs without losing quality.

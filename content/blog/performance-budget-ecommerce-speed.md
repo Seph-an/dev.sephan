@@ -3,10 +3,14 @@ title: "The Performance Budget: Keeping E-commerce Sites Under 2 Seconds"
 excerpt: "Prioritizing critical rendering paths and image optimization to reduce bounce rates."
 tags: "Performance, Speed, E-commerce, Lighthouse, Next.js"
 region: "Global"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/performance-budget-ecommerce-speed.svg"
+imageAlt: "The Performance Budget: Keeping E-commerce Sites Under 2 Seconds"
 ---
 
-In e-commerce, time is literally money. Research shows that a site that takes 3 seconds to load has a 50% higher bounce rate than one that loads in 2 seconds. For a high-volume store, this "1-second difference" can translate to millions in lost revenue every year. As an E-commerce Systems Engineer, I don't just "optimize for speed"; I implement a **Performance Budget**. This is a technical contract that ensures every code change and every new product image respects the limits necessary to keep your store lightning-fast. In this guide, we'll dive into the engineering of the 2-second storefront.
+In e-commerce, slow and unstable pages create friction when customers are trying to evaluate or buy a product. As an E-commerce Systems Engineer, I don't just "optimize for speed"; I implement a **Performance Budget**. This is a technical contract that ensures every code change and new product image respects agreed limits.
 
 ### What is a Performance Budget?
 
@@ -22,7 +26,7 @@ By setting these limits in our CI/CD pipeline (using GitHub Actions), we ensure 
 
 To get under 2 seconds, you have to prioritize what the user sees first. This is called the **Critical Rendering Path**. Most amateur e-commerce builds load everything at once: the header, the product grid, the footer, the live chat widget, and the tracking pixels. This is a mistake.
 
-We use **Next.js 15 Server Components** to pre-render the "Above the Fold" content on the server. This means the customer in Nairobi or Cape Town sees the hero image and the product title almost instantly. The "heavier" elements—like the reviews section or the "Related Products" grid—are "Lazy Loaded" as the user scrolls down. This surgical approach to loading is a hallmark of my [Technical Capabilities](/services).
+We use **Next.js Server Components** to pre-render the "Above the Fold" content on the server. The "heavier" elements—like reviews or a related-products grid—can be loaded later when that improves measured performance. This approach is part of my [Technical Capabilities](/services).
 
 ### Image Optimization: Beyond the Basics
 
@@ -50,3 +54,8 @@ If our "SEO" or "Performance" score drops below 95, we stop and fix the bottlene
 Performance isn't an afterthought; it's a core feature of your product. A fast site builds trust, improves SEO, and—most importantly—increases conversions. By implementing a performance budget and using modern engineering techniques, you can keep your e-commerce store under the 2-second mark, regardless of how large your catalog grows.
 
 Ready to put your store on a performance budget? Explore my [Technical Services](/services) or see how I've achieved world-class speeds in my [Case Studies](/case-studies).
+
+### Primary references
+
+- [Google's Web Vitals overview and current thresholds](https://web.dev/articles/vitals)
+- [Core Web Vitals measurement and optimization guides](https://web.dev/explore/learn-core-web-vitals)

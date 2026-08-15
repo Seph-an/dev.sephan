@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Clock, Tag } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarDays, Clock, Tag } from "lucide-react";
 import Link from "next/link";
-import { getBlogPosts, getPostBySlug } from "@/lib/blog";
+import { getBlogPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/siteMetadata";
@@ -30,6 +30,10 @@ export async function generateMetadata({
       description: post.excerpt,
       url: url,
       type: "article",
+      publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt,
+      authors: [siteMetadata.siteAuthor],
+      tags: post.tags,
       images: [
         {
           url: `${siteMetadata.siteUrl}${post.image}`,
@@ -66,6 +70,14 @@ export default async function BlogPostPage({
   if (!post) {
     notFound();
   }
+  const relatedPosts = await getRelatedPosts(post);
+  const serviceHref = post.tags.some((tag) => tag.toLowerCase().includes("m-pesa"))
+    ? "/ke/mpesa-ecommerce-integration"
+    : post.tags.some((tag) => tag.toLowerCase() === "n8n")
+      ? "/services/n8n-ecommerce-automation"
+      : post.tags.some((tag) => tag.toLowerCase() === "shopify")
+        ? "/services/shopify-automation"
+        : "/ke/ecommerce-automation";
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -73,20 +85,10 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.excerpt,
     image: `${siteMetadata.siteUrl}${post.image}`,
-    author: {
-      "@type": "Person",
-      name: siteMetadata.siteAuthor,
-      url: siteMetadata.siteUrl,
-      jobTitle: "E-commerce Systems Engineer",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteMetadata.siteName,
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteMetadata.siteUrl}/favicon.ico`,
-      },
-    },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    author: { "@id": siteMetadata.personId },
+    publisher: { "@id": siteMetadata.personId },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${siteMetadata.siteUrl}/blog/${post.slug}`,
@@ -123,6 +125,12 @@ export default async function BlogPostPage({
                 <Clock className="h-4 w-4" />
                 {post.readingTime}
               </div>
+              {post.publishedAt && (
+                <time dateTime={post.publishedAt} className="flex items-center gap-1.5 text-sm text-white/50">
+                  <CalendarDays className="h-4 w-4" />
+                  {new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(new Date(post.publishedAt))}
+                </time>
+              )}
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {post.title}
@@ -135,7 +143,7 @@ export default async function BlogPostPage({
           <div className="relative mb-12 aspect-[16/9] w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={post.imageAlt}
               fill
               priority
               className="object-cover"
@@ -174,6 +182,14 @@ export default async function BlogPostPage({
           </div>
 
           <footer className="mt-16 border-t border-white/10 pt-10">
+            <div className="mb-10 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
+              <Image src="/Sephan-new.jpg" alt="Sephan" width={64} height={64} className="h-16 w-16 rounded-xl object-cover" />
+              <div>
+                <p className="font-semibold text-white">Written by {post.author}</p>
+                <p className="mt-1 text-sm text-white/60">E-commerce automation and integration engineer based in Nairobi, Kenya.</p>
+                {post.updatedAt && <p className="mt-1 text-xs text-white/40">Reviewed and updated {new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(new Date(post.updatedAt))}</p>}
+              </div>
+            </div>
             <div className="flex flex-wrap gap-2">
               {post.tags.map((tag) => (
                 <span
@@ -193,19 +209,33 @@ export default async function BlogPostPage({
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4">
                 <Link
-                  href="/services"
+                  href={serviceHref}
                   className="inline-flex h-12 items-center justify-center rounded-xl bg-emerald-500 px-6 text-sm font-semibold text-[#0a0a0a] transition hover:bg-emerald-400"
                 >
-                  Explore Services
+                  Explore the relevant service
                 </Link>
                 <Link
-                  href="mailto:sephan@sephanly.com"
+                  href="/contact/ecommerce-automation-audit"
                   className="inline-flex h-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
-                  Consult on a project
+                  Request an automation audit
                 </Link>
               </div>
             </div>
+            {relatedPosts.length > 0 && (
+              <section className="mt-14" aria-labelledby="related-articles">
+                <h2 id="related-articles" className="text-2xl font-semibold text-white">Continue exploring</h2>
+                <div className="mt-5 grid gap-4 sm:grid-cols-3">
+                  {relatedPosts.map((related) => (
+                    <Link key={related.slug} href={`/blog/${related.slug}`} className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+                      <span className="text-xs font-semibold text-emerald-400">{related.region}</span>
+                      <h3 className="mt-2 font-semibold leading-6 text-white group-hover:text-emerald-300">{related.title}</h3>
+                      <span className="mt-4 inline-flex items-center text-sm text-white/55">Read article <ArrowRight className="ml-1.5 h-4 w-4" /></span>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
           </footer>
         </article>
       </main>

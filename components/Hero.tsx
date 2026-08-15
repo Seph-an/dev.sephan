@@ -2,10 +2,26 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Briefcase, Clock, ExternalLink, Mail, MapPin, ShieldCheck, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowRight, Boxes, ExternalLink, MapPin, ShieldCheck, Github, Workflow } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+
+const commerceLogos = [
+  "shopify.svg",
+  "n8n.svg",
+  "zoho.svg",
+  "node-js.webp",
+  "postgresql.svg",
+  "redis.svg",
+  "docker.svg",
+  "webhook.svg",
+  "stripe.svg",
+  "nextjs.webp",
+  "typescript.svg",
+  "google-analytics.webp",
+];
 
 export default function Hero() {
   const container = {
@@ -33,54 +49,57 @@ export default function Hero() {
         >
           <motion.div variants={item} className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80 backdrop-blur">
             <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-            <span>Open to roles · Remote</span>
+            <span>Nairobi, Kenya · Serving remote teams</span>
           </motion.div>
 
           <motion.h1 variants={item} className="text-balance text-4xl font-semibold tracking-tight text-white md:text-5xl lg:text-6xl">
-            Hi, I’m <span className="text-emerald-500">Sephan</span> ·
-            <span className="block">E‑commerce Systems Engineer & Automation Expert</span>
+            Connect the systems behind your
+            <span className="text-emerald-500"> e-commerce operations</span>
           </motion.h1>
 
           <motion.p variants={item} className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-white/75 md:text-lg">
-            I design and ship high‑conversion e‑commerce platforms with measurable business outcomes: faster load times, secure architectures, and automated workflows.
+            I automate the flow between storefronts, M-Pesa and card payments, inventory, fulfilment, CRM and reporting—using n8n, Shopify, WooCommerce and custom APIs.
           </motion.p>
 
           {/* Proof points */}
           <motion.ul variants={item} className="mt-6 flex flex-wrap items-center gap-3">
             <li className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 backdrop-blur transition hover:bg-white/10">
-              <ShieldCheck className="h-4 w-4 text-emerald-300" />
-              <span><strong className="text-white">Security‑first</strong> (HSTS, CSP, COOP/COEP)</span>
+              <Workflow className="h-4 w-4 text-emerald-300" />
+              <span><strong className="text-white">Reliable workflows</strong> with retries and recovery</span>
             </li>
             <li className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 backdrop-blur transition hover:bg-white/10">
-              <Clock className="h-4 w-4 text-sky-300" />
-              <span><strong className="text-white"><span className="tabular-nums">95th</span>‑percentile</strong> ship velocity</span>
+              <Boxes className="h-4 w-4 text-sky-300" />
+              <span><strong className="text-white">Connected operations</strong> across the commerce stack</span>
             </li>
             <li className="group inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white/80 backdrop-blur transition hover:bg-white/10">
-              <Briefcase className="h-4 w-4 text-indigo-300" />
-              <span><strong className="text-white">Multifaceted shipper</strong> (Web Dev, UI/UX, SEO, DevOps…)</span>
+              <ShieldCheck className="h-4 w-4 text-indigo-300" />
+              <span><strong className="text-white">Security-first</strong> integrations and handover</span>
             </li>
           </motion.ul>
 
           {/* CTAs */}
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg" className="group h-11 rounded-xl bg-emerald-500 text-[#0a0a0a] font-bold transition hover:bg-emerald-400">
-              <a href="mailto:sephan@sephanly.com" aria-label="Email me">
-                <Mail className="mr-2 h-4 w-4 text-[#0a0a0a]" />
-                Consult on a project
+              <Link
+                href="/contact/ecommerce-automation-audit"
+                data-ga-event="book_consultation"
+                data-ga-placement="homepage_hero"
+              >
+                Request an automation audit
                 <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5 text-[#0a0a0a]" />
-              </a>
+              </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-11 rounded-xl border-white/20 bg-white/5 text-white hover:bg-white/10">
-              <a href="/case-studies" aria-label="View work">
+              <Link href="/case-studies" aria-label="View work" data-ga-event="view_case_study" data-ga-placement="homepage_hero">
                 <ExternalLink className="mr-2 h-4 w-4" />
-                View Work
-              </a>
+                See proof
+              </Link>
             </Button>
           </motion.div>
 
           {/* Skill chips */}
           <motion.div variants={item} className="mt-7 flex flex-wrap gap-2">
-            {["Next.js 15","TypeScript","Tailwind","Node","Docker","CI/CD","Redis","WebSec"].map((skill) => (
+            {["n8n", "Shopify", "WooCommerce", "M-Pesa", "Node.js", "APIs", "PostgreSQL", "Docker"].map((skill) => (
               <Badge key={skill} variant="secondary" className="rounded-lg border-white/15 bg-white/10 text-white/80 backdrop-blur hover:bg-white/20">
                 {skill}
               </Badge>
@@ -119,7 +138,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white">Sephan</h3>
-                    <p className="text-sm text-white/70">E-commerce · AI · Automation</p>
+                    <p className="text-sm text-white/70">E-commerce · Integrations · Automation</p>
                     <p className="mt-1 flex items-center gap-1.5 text-xs text-white/60">
                       <MapPin className="h-3.5 w-3.5" /> Nairobi, KE
                     </p>
@@ -130,9 +149,9 @@ export default function Hero() {
 
               <div className="mt-6 grid grid-cols-3 gap-2">
                 {[
-                  { label: "Years", value: "3+" },
-                  { label: "Launches", value: "25+" },
-                  { label: "SLA", value: "99.9%" },
+                  { label: "Focus", value: "Ops" },
+                  { label: "Market", value: "KE" },
+                  { label: "Delivery", value: "Remote" },
                 ].map((m) => (
                   <div key={m.label} className="rounded-xl border border-white/10 bg-white/5 p-3 text-center text-white/80">
                     <div className="text-xl font-semibold text-white tabular-nums">{m.value}</div>
@@ -143,7 +162,7 @@ export default function Hero() {
 
               <div className="mt-6 rounded-xl border border-white/10 bg-white/[0.06] p-4">
                 <p className="text-sm text-white/75">
-                  <span className="text-emerald-500">Recent highlight:</span> scraped and upscaled <span className="tabular-nums">3,000+</span> product images in under <span className="tabular-nums">45m</span> using a custom <span className="text-white">Real-ESRGAN</span> pipeline on Google Colab GPUs to deliver optimized, high-fidelity catalog assets for an e-commerce project.
+                  <span className="text-emerald-500">Start with the bottleneck:</span> map the order, payment, stock or fulfilment hand-off that consumes the most time, then automate it with visible failure handling and a clear owner.
                 </p>
               </div>
 
@@ -151,18 +170,7 @@ export default function Hero() {
               <div className="mt-8 overflow-hidden">
                 <div className="marquee-container">
                   <div className="marquee-content flex-nowrap">
-                    {[
-                      "airtel.webp", "apache-tika.webp", "apple-light.svg", "bagisto.webp",
-                      "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
-                      "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
-                      "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
-                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
-                      "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
-                      "ollama-dark.svg", "openai-light.webp", "php-light.svg", "postgresql.svg", "postiz.webp",
-                      "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
-                      "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
-                      "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
-                    ].map((logo, idx) => (
+                    {commerceLogos.map((logo, idx) => (
                       <div key={`logo-1-${idx}`} className="flex shrink-0 items-center justify-center">
                         <Image
                           src={`/marquee/${logo}`}
@@ -175,18 +183,7 @@ export default function Hero() {
                       </div>
                     ))}
                     {/* Duplicate set for perfect infinite loop */}
-                    {[
-                      "airtel.webp", "apache-tika.webp", "apple-light.svg", "bagisto.webp",
-                      "codex-color.webp", "colab.webp", "coolify.webp", "css-light.svg", 
-                      "digital-ocean.webp", "docker.svg", "gemini-color.svg", "geminicli-color.webp", 
-                      "git.webp", "github-light.webp", "google-analytics.webp", "google-search-console.webp",
-                      "javascript.svg", "jenkins.webp", "kali-linux.svg", "laravel.svg", "linux.webp", "mcp.webp",
-                      "mysql.svg", "n8n.svg", "nextjs.webp", "nginx.webp", "node-js.webp",
-                      "ollama-dark.svg", "openai-light.webp", "php-light.svg", "postgresql.svg", "postiz.webp",
-                      "python.svg", "rabbitmq.svg", "reactjs.webp", "redis.svg", "sephanly.png", "shell-light.svg",
-                      "shopify.svg", "strapi.svg", "stripe.svg", "tailwind.svg", "terminal.svg", "typescript.svg", 
-                      "vscode.webp", "webhook.svg", "wordpress.svg", "zoho.svg"
-                    ].map((logo, idx) => (
+                    {commerceLogos.map((logo, idx) => (
                       <div key={`logo-2-${idx}`} className="flex shrink-0 items-center justify-center">
                         <Image
                           src={`/marquee/${logo}`}

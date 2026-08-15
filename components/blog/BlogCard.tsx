@@ -22,6 +22,7 @@ export default function BlogCard({ post, index = 0 }: { post: BlogPost; index?: 
           <Image
             src={post.image}
             alt={post.title}
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
@@ -37,7 +38,12 @@ export default function BlogCard({ post, index = 0 }: { post: BlogPost; index?: 
           </div>
         </div>
 
-        <div className="p-5">
+          <div className="p-5">
+          {post.publishedAt && (
+            <time dateTime={post.publishedAt} className="text-xs text-white/45">
+              {new Intl.DateTimeFormat("en", { dateStyle: "medium" }).format(new Date(post.publishedAt))}
+            </time>
+          )}
           <div className="flex items-start justify-between gap-3">
             <h3 className="line-clamp-2 text-lg font-semibold leading-tight text-white group-hover:text-emerald-400 transition-colors">
               {post.title}

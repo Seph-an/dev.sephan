@@ -3,7 +3,11 @@ title: "How to sell things online in Nairobi: A beginner's guide to M-Pesa check
 excerpt: "A simple look at how any shop in Kenya can start taking payments directly on their website using M-Pesa."
 tags: "E-commerce, M-Pesa, Kenya, Payments"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/how-to-sell-online-nairobi-mpesa.svg"
+imageAlt: "How to sell things online in Nairobi: A beginner's guide to M-Pesa checkouts"
 ---
 
 Selling things online in Nairobi is no longer just about having an Instagram page or a WhatsApp group. To truly scale, a business needs a professional e-commerce system that can handle transactions while the owner sleeps. The most critical part of this system for any Kenyan merchant is the payment gateway, and in our market, that means M-Pesa.

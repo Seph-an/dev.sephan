@@ -3,7 +3,11 @@ title: "M-Pesa API Integration: Building Secure Local Payment Rails with Node.js
 excerpt: "A step-by-step guide to connecting Safaricom's Daraja API with Node.js for real-time transaction verification in e-commerce."
 tags: "M-Pesa, Node.js, Daraja API, Payments, Kenya"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/mpesa-api-integration-nodejs.svg"
+imageAlt: "M-Pesa API Integration: Building Secure Local Payment Rails with Node.js"
 ---
 
 For any developer building e-commerce in Kenya, the Safaricom Daraja API is the most important tool in their kit. It is the bridge between a customer’s phone and your server. However, many developers struggle with making this integration "Production Ready"—often resulting in security vulnerabilities or missing transaction data. In this guide, I will break down how I build high-performance M-Pesa payment rails using Node.js.
@@ -41,7 +45,7 @@ This rigorous approach to security is a hallmark of my [technical capabilities](
 
 ### Integration with Modern Frameworks
 
-Integrating these payment rails into a Next.js 15 frontend is where the magic happens. Using Server Actions or a dedicated API route, you can trigger the STK Push and then use a WebSocket or a polling mechanism to give the user instant feedback on the screen. The moment they hit "Finish" on their phone, the website should say "Order Successful."
+Integrating these payment rails into a Next.js frontend is where the customer payment experience takes shape. Using Server Actions or a dedicated API route, you can trigger the STK Push and use a WebSocket or polling to return verified status. The website should only show a successful order after the server has confirmed the payment state.
 
 This seamless experience is what drives sales. It removes the need for customers to "Contact us on WhatsApp with the code," a workflow that kills scalability. By automating the entire flow, you turn your website into a high-conversion machine.
 
@@ -50,3 +54,8 @@ This seamless experience is what drives sales. It removes the need for customers
 Building secure local payment rails for Kenyan e-commerce is about more than just reading API documentation. It's about engineering a system that handles network failure, prevents fraud, and provides a world-class user experience. Node.js is a fantastic tool for this because of its non-blocking I/O and vast ecosystem of libraries.
 
 If you're looking to build a high-performance storefront with M-Pesa at its core, explore my [Services](/services) or see how I've handled similar large-scale data integrations in my [Case Studies](/case-studies).
+
+### Primary references
+
+- [Safaricom Daraja developer portal](https://developer.safaricom.co.ke/)
+- [Shopify guidance on idempotent webhook processing](https://shopify.dev/docs/apps/build/webhooks/verify-deliveries)

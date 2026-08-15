@@ -5,47 +5,41 @@ import { siteMetadata } from "@/lib/siteMetadata";
 
 const serviceSections = [
   {
-    title: "Web Development Packages",
-    description: "Web builds engineered for speed, SEO, and measurable conversion gains.",
-    items: ["Landing page", "Full website", "Web app", "E-commerce", "Betting site", "Booking site", "Portfolio site", "Blog CMS"],
-    evidence: { label: "View Gap Recruitment build", href: "/case-studies/gap-recruitment-full-stack" }
+    title: "E-commerce Operations Automation",
+    description: "Connect the operational flow from checkout through payment, inventory, fulfilment, customer communication and reporting.",
+    items: ["Order routing", "Inventory sync", "Fulfilment", "CRM", "Accounting", "Reporting"],
+    evidence: { label: "Explore Kenya automation", href: "/ke/ecommerce-automation" }
   },
   {
-    title: "Automation Services",
-    description: "Replace manual busywork with resilient automation powered by n8n and API orchestration.",
-    items: ["WhatsApp bots", "Browser automations", "Online payment", "Web scraping", "Workflow automation (Zoho, Google, etc.)"],
-    evidence: { label: "View n8n workflow system", href: "/case-studies/n8n-workflow-automation-systems" }
+    title: "n8n Workflow Engineering",
+    description: "Design and self-host maintainable n8n automations with validation, retries, alerts, recovery and handover.",
+    items: ["n8n hosting", "Workflow design", "API orchestration", "Monitoring", "Runbooks"],
+    evidence: { label: "Explore n8n automation", href: "/services/n8n-ecommerce-automation" }
   },
   {
-    title: "AI Services",
-    description: "Production-ready AI integrations that align with your data governance and product goals.",
-    items: ["AI integration", "RAG setup", "Custom agent", "Internal tools"],
-    evidence: { label: "View Postiz automation", href: "/case-studies/postiz-social-media-automation" }
+    title: "M-Pesa Commerce Integration",
+    description: "Implement payment initiation, callbacks, order state, reconciliation and production recovery for Kenyan stores.",
+    items: ["Daraja", "STK Push", "Callbacks", "Reconciliation", "Payment status"],
+    evidence: { label: "Explore M-Pesa integration", href: "/ke/mpesa-ecommerce-integration" }
   },
   {
-    title: "Search Engine Optimization",
-    description: "Holistic SEO programs that align content, technical health, and analytics instrumentation.",
-    items: ["Content strategy", "Technical SEO", "On-page SEO", "Off-page SEO", "Google Cloud Console", "Content calendar"],
-    evidence: { label: "View Strapi SEO case study", href: "/case-studies/strapi-headless-cms-creative-autonomy" }
+    title: "Shopify Automation",
+    description: "Connect Shopify to the ERP, POS, 3PL, CRM, accounting, support and reporting tools behind the store.",
+    items: ["Webhooks", "ERP and POS", "3PL", "Inventory", "Customer data", "Finance"],
+    evidence: { label: "Explore Shopify automation", href: "/services/shopify-automation" }
   },
   {
-    title: "DevOps & Cloud",
-    description: "Infrastructure tuned for predictable releases, observability, and cost efficiency.",
-    items: ["Docker deployments", "Nginx configuration", "Droplet setup", "CI/CD pipelines"],
-    evidence: { label: "View Coolify PaaS setup", href: "/case-studies/coolify-private-paas-orchestration" }
-  },
-  {
-    title: "Security & Observability",
-    description: "Security-first practices and telemetry baked into every engagement.",
-    items: ["HSTS / CSP", "Rate limiting", "Logging & tracing", "Secrets hygiene"],
-    evidence: { label: "View Urbanac security setup", href: "/case-studies/urbanac-cleaning-one-pager" }
+    title: "Custom Commerce Integrations",
+    description: "Build secure middleware and APIs where an off-the-shelf connector cannot represent the business rules.",
+    items: ["Custom APIs", "Webhooks", "Middleware", "Data migration", "Security", "Observability"],
+    evidence: { label: "See integration case studies", href: "/case-studies" }
   },
 ];
 
 export const metadata: Metadata = {
-  title: "E-commerce Engineering Services and Technical Capabilities",
+  title: "E-commerce Automation & Integration Services",
   description:
-    "Advanced technical services for high-performance e-commerce systems, API integrations, and automated business workflows.",
+    "Connect payments, orders, inventory, fulfilment, CRM and reporting with n8n, Shopify, M-Pesa and custom e-commerce integrations.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "E-commerce Engineering Services and Technical Capabilities",
@@ -64,7 +58,7 @@ export const metadata: Metadata = {
 const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "E-commerce, Automation, and AI Services",
+  name: "E-commerce Automation and Integration Services",
   provider: {
     "@type": "Person",
     name: siteMetadata.siteAuthor,
@@ -75,7 +69,7 @@ const servicesSchema = {
       addressCountry: siteMetadata.location.country,
     },
   },
-  areaServed: ["Remote", "On-site Nairobi"],
+  areaServed: ["Kenya", "Remote"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Service catalog",

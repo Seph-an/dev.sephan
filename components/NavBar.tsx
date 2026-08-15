@@ -2,32 +2,25 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Check, Menu, X } from "lucide-react";
-import { Poppins } from "next/font/google";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About me", href: "/about" },
-  { label: "Project portfolio", href: "/case-studies" },
-  { label: "Blog", href: "/blog" },
   { label: "Services", href: "/services" },
-  { label: "FAQs", href: "/faqs" },
+  { label: "Kenya", href: "/ke/ecommerce-automation" },
+  { label: "Case studies", href: "/case-studies" },
+  { label: "Insights", href: "/blog" },
+  { label: "About", href: "/about" },
 ];
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) =>
+    href === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
 
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
@@ -56,7 +49,7 @@ export default function NavBar() {
             <span className="text-3xl font-semibold text-white md:text-4xl">
               SE
               <span
-                className={`${poppins.className} ml-1 inline-block align-middle text-[2.4rem] font-semibold leading-[0.75] text-emerald-500 md:text-[2.6rem]`}
+                className="ml-1 inline-block align-middle text-[2.4rem] font-semibold leading-[0.75] text-emerald-500 md:text-[2.6rem]"
               >
                 .
               </span>
@@ -85,10 +78,15 @@ export default function NavBar() {
               size="lg"
               className="hidden h-11 rounded-xl bg-emerald-500 px-5 text-[#0a0a0a] font-bold transition hover:bg-emerald-400 sm:inline-flex"
             >
-              <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
-                <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
-                Consult on a project
-              </a>
+              <Link
+                href="/contact/ecommerce-automation-audit"
+                className="inline-flex items-center"
+                data-ga-event="book_consultation"
+                data-ga-placement="navigation"
+              >
+                Request an audit
+                <ArrowRight className="ml-2 h-4 w-4 text-[#0a0a0a]" />
+              </Link>
             </Button>
           </div>
 
@@ -109,8 +107,8 @@ export default function NavBar() {
 
         {/* Mobile menu */}
         <div
-          className={`pointer-events-auto absolute left-0 right-0 top-full mt-3 overflow-hidden rounded-2xl border border-white/10 bg-white/10 text-sm text-white backdrop-blur-2xl ring-1 ring-white/10 transition-[max-height,opacity] duration-300 sm:hidden ${
-            open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          className={`pointer-events-auto absolute left-0 right-0 top-full mt-3 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/95 text-sm text-white backdrop-blur-2xl ring-1 ring-white/10 transition-[max-height,opacity] duration-300 sm:hidden ${
+            open ? "max-h-[32rem] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="flex flex-col">
@@ -136,10 +134,16 @@ export default function NavBar() {
               size="lg"
               className="m-3 h-11 rounded-xl bg-emerald-500 text-[#0a0a0a] font-bold transition hover:bg-emerald-400"
             >
-              <a href="mailto:sephan@sephanly.com" aria-label="Email me" className="inline-flex items-center">
-                <Check className="mr-2 h-4 w-4 text-[#0a0a0a]" />
-                Consult on a project
-              </a>
+              <Link
+                href="/contact/ecommerce-automation-audit"
+                onClick={closeMenu}
+                className="inline-flex items-center"
+                data-ga-event="book_consultation"
+                data-ga-placement="mobile_navigation"
+              >
+                Request an audit
+                <ArrowRight className="ml-2 h-4 w-4 text-[#0a0a0a]" />
+              </Link>
             </Button>
           </div>
         </div>

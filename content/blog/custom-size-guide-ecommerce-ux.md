@@ -3,7 +3,11 @@ title: "Why your Nairobi fashion brand needs a custom 'Size Guide' tool"
 excerpt: "Reducing returns by building technical tools that help your customers pick the right fit every time."
 tags: "Fashion, UX, Tooling, E-commerce, Nairobi"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/custom-size-guide-ecommerce-ux.svg"
+imageAlt: "Why your Nairobi fashion brand needs a custom 'Size Guide' tool"
 ---
 
 The fashion e-commerce market in Nairobi is exploding. From high-end designers in Lavington to trendy streetwear brands in the CBD, more Kenyans are buying clothes online than ever before. But there is a massive technical bottleneck that costs Nairobi fashion brands thousands of shillings every week: **Returns due to poor fit.** When a customer orders a "Large" and it arrives feeling like a "Small," they get frustrated, and you lose money on delivery costs. In this guide, we’ll explore how building a custom technical "Size Guide" tool can solve this problem and boost your conversion rate.
@@ -28,7 +32,7 @@ A custom size tool also allows you to collect valuable data. By using [n8n autom
 
 ### The Technical Implementation: React and Framer Motion
 
-To make the size guide feel "premium," we use animations. Using **Framer Motion** on a Next.js 15 frontend, we can create smooth transitions as the user toggles between sizes. This isn't just "eye candy"; it makes the technical data more digestible. 
+To make the size guide feel "premium," we use animations. Using **Framer Motion** on a Next.js frontend, we can create smooth transitions as the user toggles between sizes. This isn't just "eye candy"; it makes the technical data more digestible.
 
 For example, when a user selects "Medium," the tool can highlight the exact measurements on an isometric drawing of the garment. This level of technical polish is what I demonstrated in the [Urbanac cleaning platform build](/case-studies/urbanac-cleaning-one-pager), where we focused on making complex service options easy to understand.
 

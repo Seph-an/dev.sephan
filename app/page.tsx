@@ -5,55 +5,32 @@ import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
-  title: "E-commerce Systems Engineer specializing in API integrations and automation",
+  title: "E-commerce Automation & Integration Engineer in Kenya",
   description:
-    "Expert technical solutions for high-performance E-commerce systems, API integrations, and automated workflows with measurable business outcomes.",
+    "Connect e-commerce payments, orders, inventory, fulfilment, CRM and reporting with reliable automation, M-Pesa, Shopify, n8n and custom APIs.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "E-commerce Systems Engineer specializing in API integrations and automation",
+    title: "E-commerce Automation & Integration Engineer in Kenya",
     description:
-      "Specialized engineering for resilient e-commerce platforms, high-volume automation, and secure API integrations.",
+      "Reliable automation and API integrations for the operations behind growing e-commerce stores.",
     url: siteMetadata.siteUrl,
     type: "website",
   },
   twitter: {
-    title: "E-commerce Systems Engineer specializing in API integrations and automation",
+    title: "E-commerce Automation & Integration Engineer in Kenya",
     description:
-      "Specialized engineering for resilient e-commerce platforms, high-volume automation, and secure API integrations.",
+      "Reliable automation and API integrations for the operations behind growing e-commerce stores.",
   },
 };
 
 const homeSchema = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: `${siteMetadata.siteName} Portfolio`,
+  "@type": "WebPage",
+  name: "E-commerce Automation and Integration Engineer in Kenya",
   url: siteMetadata.siteUrl,
-  description:
-    "Sephan is an e-commerce systems engineer blending hardware discipline, AI-driven automations, and modern web craft to launch high-conversion platforms.",
-  publisher: {
-    "@type": "Person",
-    name: siteMetadata.siteAuthor,
-    jobTitle: "E-commerce Systems Engineer & Automation Expert",
-    email: siteMetadata.contactEmail,
-    url: siteMetadata.siteUrl,
-    sameAs: [
-      "https://github.com/Seph-an",
-      "https://linkedin.com/in/sephan-an"
-    ],
-    knowsAbout: [
-      "E-commerce Systems",
-      "Shopify & WooCommerce",
-      "API Integrations",
-      "Workflow Automation",
-      "Next.js",
-      "Technical SEO"
-    ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: siteMetadata.location.city,
-      addressCountry: siteMetadata.location.country,
-    },
-  },
+  description: siteMetadata.defaultDescription,
+  isPartOf: { "@id": siteMetadata.websiteId },
+  about: { "@id": siteMetadata.personId },
   potentialAction: {
     "@type": "ContactAction",
     target: `mailto:${siteMetadata.contactEmail}`,

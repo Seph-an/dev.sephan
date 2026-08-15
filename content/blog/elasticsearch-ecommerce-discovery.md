@@ -3,7 +3,11 @@ title: "ElasticSearch for E-commerce: Powering High-Speed Product Discovery"
 excerpt: "Implementing full-text search and faceted filtering for large-scale catalogs."
 tags: "Search, ElasticSearch, Data, E-commerce, Discovery"
 region: "Global"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/elasticsearch-ecommerce-discovery.svg"
+imageAlt: "ElasticSearch for E-commerce: Powering High-Speed Product Discovery"
 ---
 
 When an e-commerce store grows beyond a few hundred products, a simple database "LIKE" query for search is no longer sufficient. Your customers expect instant, relevant results, even if they make a typo. They want to filter by price, brand, and color without waiting for the page to refresh. To provide this level of "World-Class Discovery," you need a dedicated search engine. In this guide, we'll explore how I implement **ElasticSearch** to power high-speed product discovery for large-scale e-commerce systems.
@@ -18,7 +22,7 @@ ElasticSearch is an "Inverted Index." It breaks down every word in your product 
 
 Discovery is more than just a search bar; it's about helping the user narrow down their choices. This is called **Faceted Filtering**. Think of the sidebar on Amazon or Takealot where you can click "Under R500" or "4 Stars and Up."
 
-Technically, ElasticSearch handles this via "Aggregations." Every time a user searches, the engine returns not just the products, but also a summary of the available filters. We use **Next.js 15 Server Components** to fetch this data and update the UI without a full page reload. This creates a "Fluid" shopping experience that keeps users engaged. This focus on "Interactive Discovery" is a core part of my [Technical Capabilities](/services).
+Technically, Elasticsearch handles this via aggregations. A search can return products plus a summary of available filters. We use **Next.js Server Components** to fetch this data and update the UI without a full page reload. This focus on interactive discovery is part of my [Technical Capabilities](/services).
 
 ### Handling Typos and "Fuzzy" Matching
 

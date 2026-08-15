@@ -3,7 +3,11 @@ title: "Selling solar products in rural Kenya: Why 'Offline-First' matters"
 excerpt: "Optimizing your site for low-bandwidth areas where the sun is bright but the 4G is weak."
 tags: "Solar, Offline-First, PWA, E-commerce, Kenya"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/offline-first-ecommerce-rural-kenya.svg"
+imageAlt: "Selling solar products in rural Kenya: Why 'Offline-First' matters"
 ---
 
 The transition to solar energy is one of the biggest economic shifts in rural Kenya. From Kitui to Turkana, households and farms are looking for reliable solar solutions. But selling these products online presents a unique technical challenge: **The digital divide.** In many rural areas, 4G signals are weak, data is expensive, and power for charging devices is sometimes intermittent. If your e-commerce site is heavy and requires a constant high-speed connection, you are failing your customers. In this guide, we'll explore why an "Offline-First" technical strategy is critical for selling solar in rural Kenya.

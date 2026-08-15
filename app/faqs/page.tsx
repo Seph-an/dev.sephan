@@ -2,12 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import JsonLd from "@/components/JsonLd";
-import { siteMetadata } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description: "Common questions about e-commerce systems, headless CMS, SEO, automation, and how Sephan delivers high-impact technical solutions.",
   alternates: { canonical: "/faqs" },
+  openGraph: {
+    title: "E-commerce Automation and Integration FAQs",
+    description: "Answers about commerce automation, M-Pesa, n8n, integrations, delivery and ongoing support.",
+    url: "/faqs",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "E-commerce Automation and Integration FAQs",
+    description: "Answers about commerce automation, M-Pesa, n8n, integrations, delivery and ongoing support.",
+  },
 };
 
 const faqs = [
@@ -35,7 +45,7 @@ const faqs = [
     question: "What is a Headless CMS (like Strapi)?",
     answer: (
       <>
-        A headless CMS is a 'content-only' database that delivers your text and images via an API. Unlike traditional builders, it decouples your content from your design. This means you can update your website text through an easy dashboard, as seen in my{" "}
+        A headless CMS is a &lsquo;content-only&rsquo; database that delivers your text and images via an API. Unlike traditional builders, it decouples your content from your design. This means you can update your website text through an easy dashboard, as seen in my{" "}
         <Link href="/case-studies/strapi-headless-cms-creative-autonomy" className="text-emerald-400 hover:underline">Strapi SEO case study</Link>, while the frontend remains lightning-fast.
       </>
     ),
@@ -71,10 +81,10 @@ const faqs = [
     answer: (
       <>
         Self-hosting your automation (using tools like{" "}
-        <Link href="/case-studies/n8n-workflow-automation-systems" className="text-emerald-400 hover:underline">n8n</Link>) allows you to eliminate 'per-task' subscription fees. It also ensures absolute data sovereignty, keeping your sensitive data on your own private server.
+        <Link href="/case-studies/n8n-workflow-automation-systems" className="text-emerald-400 hover:underline">n8n</Link>) can eliminate per-task platform fees and keep workflow data on infrastructure you control, subject to your security and hosting choices.
       </>
     ),
-    plainText: "Self-hosting automation with n8n eliminates per-task fees and ensures absolute data sovereignty."
+    plainText: "Self-hosting automation with n8n can eliminate per-task platform fees and keep workflow data on infrastructure you control, subject to your security and hosting choices."
   },
   {
     question: "What is a Private PaaS (like Coolify)?",
@@ -204,18 +214,20 @@ export default function FAQPage() {
               I’m always open to consulting on technical architecture, project scopes, or how I can help solve your specific business challenges.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                href="mailto:sephan@sephanly.com"
+              <Link
+                href="/contact/ecommerce-automation-audit"
                 className="inline-flex h-12 items-center justify-center rounded-xl bg-white px-6 text-sm font-semibold text-black transition hover:brightness-95"
+                data-ga-event="book_consultation"
+                data-ga-placement="faq_footer"
               >
-                Email Me
-              </a>
-              <a
+                Request an audit
+              </Link>
+              <Link
                 href="/case-studies"
                 className="inline-flex h-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
               >
                 Browse Portfolio
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -2,10 +2,23 @@ import { Metadata } from "next";
 import { getBlogPosts } from "@/lib/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { siteMetadata } from "@/lib/siteMetadata";
 
 export const metadata: Metadata = {
   title: "Engineering Blog · E-commerce Systems & Automation",
   description: "Technical insights on building high-performance e-commerce platforms, M-Pesa integrations, and automated business workflows in East Africa.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "E-commerce Automation Engineering Insights",
+    description: "Practical guides to M-Pesa, n8n, Shopify, commerce integrations and reliable operations.",
+    url: `${siteMetadata.siteUrl}/blog`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "E-commerce Automation Engineering Insights",
+    description: "Practical guides to M-Pesa, n8n, Shopify, commerce integrations and reliable operations.",
+  },
 };
 
 export default async function BlogPage() {
@@ -18,10 +31,10 @@ export default async function BlogPage() {
         
         <header className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Engineering <span className="text-emerald-500">Blog</span>
+            E-commerce automation <span className="text-emerald-500">insights</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-white/60">
-            A repository of technical guides, architectural deep-dives, and regional e-commerce strategies.
+            Practical guides to payments, integrations and reliable workflows for the operations behind online stores.
           </p>
         </header>
 

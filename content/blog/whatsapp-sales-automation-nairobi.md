@@ -3,7 +3,11 @@ title: "How to use WhatsApp to close sales on your Nairobi website"
 excerpt: "Adding a smart 'Chat to Buy' button that carries the product details directly into the conversation."
 tags: "WhatsApp, Automation, Nairobi, Sales, E-commerce"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/whatsapp-sales-automation-nairobi.svg"
+imageAlt: "How to use WhatsApp to close sales on your Nairobi website"
 ---
 
 In Nairobi, WhatsApp isn't just a messaging app—it's the primary engine of commerce. From Gikomba wholesalers to Westlands boutiques, more sales happen in "the DMs" than anywhere else. However, for a growing business, manual WhatsApp selling doesn't scale. You lose track of orders, customers get frustrated by slow replies, and your website feels disconnected from your chat. In this guide, we'll explore the technical strategy for turning WhatsApp into a high-conversion sales channel for your Nairobi website.

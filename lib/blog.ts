@@ -12,6 +12,10 @@ export interface BlogPost {
   content: string;
   readingTime: string;
   image: string;
+  imageAlt: string;
+  author: string;
+  publishedAt: string;
+  updatedAt: string;
 }
 
 export async function getBlogPosts(): Promise<BlogPost[]> {
@@ -28,7 +32,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
       // Simple frontmatter parser
       const frontmatterRegex = /^---\s*([\s\S]*?)\s*---/;
       const match = fileContent.match(frontmatterRegex);
-      const frontmatter: Record<string, any> = {};
+      const frontmatter: Record<string, string | string[]> = {};
       
       if (match) {
         const lines = match[1].split('\n');
@@ -38,7 +42,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
             const cleanKey = key.trim();
             const cleanVal = val.join(':').trim().replace(/^"(.*)"$/, '$1');
             if (cleanKey === 'tags') {
-              frontmatter[cleanKey] = cleanVal.split(',').map(t => t.trim());
+              frontmatter[cleanKey] = cleanVal.split(',').map((tag) => tag.trim());
             } else {
               frontmatter[cleanKey] = cleanVal;
             }
@@ -52,17 +56,37 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
 
       return {
         slug,
-        title: frontmatter.title || 'Untitled',
-        excerpt: frontmatter.excerpt || '',
-        tags: frontmatter.tags || [],
-        region: frontmatter.region || 'Global',
+        title: String(frontmatter.title || 'Untitled'),
+        excerpt: String(frontmatter.excerpt || ''),
+        tags: Array.isArray(frontmatter.tags) ? frontmatter.tags : [],
+        region: String(frontmatter.region || 'Global'),
         content,
         readingTime,
-        image: frontmatter.image || `/api/blog-placeholder/${slug}`,
+        image: String(frontmatter.image || `/api/blog-placeholder/${slug}`),
+        imageAlt: String(frontmatter.imageAlt || frontmatter.title || 'Article cover'),
+        author: String(frontmatter.author || 'Sephan'),
+        publishedAt: String(frontmatter.publishedAt || ''),
+        updatedAt: String(frontmatter.updatedAt || frontmatter.publishedAt || ''),
       };
-    });
+    })
+    .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title));
 
   return posts;
+}
+
+export async function getRelatedPosts(post: BlogPost, limit = 3): Promise<BlogPost[]> {
+  const posts = await getBlogPosts();
+  return posts
+    .filter((candidate) => candidate.slug !== post.slug)
+    .map((candidate) => ({
+      candidate,
+      score:
+        candidate.tags.filter((tag) => post.tags.includes(tag)).length * 2 +
+        (candidate.region === post.region ? 1 : 0),
+    }))
+    .sort((a, b) => b.score - a.score || b.candidate.updatedAt.localeCompare(a.candidate.updatedAt))
+    .slice(0, limit)
+    .map(({ candidate }) => candidate);
 }
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {

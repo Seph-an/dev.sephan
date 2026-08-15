@@ -51,10 +51,10 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
             Services
           </p>
           <h1 className="mt-5 text-balance text-4xl font-semibold tracking-tight md:text-5xl">
-            Speed, automation, and reliability.
+            Connect the operations behind your store.
           </h1>
           <p className="mt-4 text-lg text-white/80">
-            From concept to infrastructure, I help individuals and organizations ship reliable software that grows with their business.
+            Replace fragile copy-paste work with monitored flows across payments, orders, stock, fulfilment, CRM and reporting.
           </p>
         </section>
       </FadeInOnView>
@@ -67,7 +67,7 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
                 <div className="flex items-center justify-between">
                   <h2 className="text-xl font-semibold text-white">{service.title}</h2>
                   <span className="rounded-full border border-emerald-400/30 bg-emerald-400/15 px-3 py-1 text-xs font-medium text-emerald-200">
-                    End-to-end
+                    Outcome-led
                   </span>
                 </div>
                 <p className="mt-3 text-sm text-white/70">{service.description}</p>
@@ -99,10 +99,9 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
 
         <FadeInOnView delay={0.2}>
           <div className="mt-16 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-emerald-400/10 to-transparent p-8 text-center shadow-2xl shadow-emerald-500/20">
-            <h3 className="text-2xl font-semibold text-white">Let’s build your next launch.</h3>
+            <h3 className="text-2xl font-semibold text-white">Start with the workflow that costs the most.</h3>
             <p className="mt-3 text-white/80">
-              Whether you need a fast-moving project partner or a fractional engineering lead, I can help scope, architect,
-              and deliver.
+              Share the store, tools and manual hand-off. The automation audit turns them into a structured technical brief.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
               <Button
@@ -110,11 +109,11 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
                 size="lg"
                 className="group h-11 w-full rounded-xl bg-white text-black transition hover:brightness-95 sm:w-auto"
               >
-                <a href="mailto:hello@sephanly.com" aria-label="Email Sephan">
+                <Link href="/contact/ecommerce-automation-audit" data-ga-event="book_consultation" data-ga-placement="services_footer">
                   <Mail className="mr-2 h-4 w-4" />
-                  Consult now
+                  Request an audit
                   <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5" />
-                </a>
+                </Link>
               </Button>
               <Button
                 asChild
@@ -122,9 +121,9 @@ export default function ServicesContent({ sections }: { sections: ServiceSection
                 variant="outline"
                 className="h-11 w-full rounded-xl border-white/20 bg-white/5 text-white hover:bg-white/10 sm:w-auto"
               >
-                <a href="/case-studies">
+                <Link href="/case-studies">
                   See proof of work
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

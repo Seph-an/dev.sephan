@@ -3,7 +3,11 @@ title: "Prescription Logic in E-commerce: Handling Compliance in High-Stakes Bui
 excerpt: "How we implemented conditional 'Add to Cart' logic for regulated products in the Browns Pharmacy project."
 tags: "Pharmacy, Compliance, Logic, E-commerce, Zoho"
 region: "Kenya"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/prescription-logic-ecommerce-compliance.svg"
+imageAlt: "Prescription Logic in E-commerce: Handling Compliance in High-Stakes Builds"
 ---
 
 Building an online pharmacy is vastly different from building a typical fashion or electronics store. In Kenya, the sale of pharmaceuticals is strictly regulated by the Pharmacy and Poisons Board (PPB). You cannot simply allow a customer to buy any medication with a single click. Some products require a physical prescription, while others have strict quantity limits. In this guide, we'll dive into the technical logic required to build a compliant pharmacy e-commerce system, drawing from lessons learned during the [Browns Pharmacy project](/case-studies/zoho-pharmacy-ecommerce).

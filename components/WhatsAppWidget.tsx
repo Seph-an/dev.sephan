@@ -14,6 +14,8 @@ export default function WhatsAppWidget() {
           href={whatsappUrl}
           target="_blank"
           rel="noreferrer"
+          data-ga-event="click_whatsapp"
+          data-ga-placement="floating_widget"
           className="pointer-events-auto flex flex-col items-end gap-1.5 group"
           aria-label="Contact on WhatsApp"
         >

@@ -43,7 +43,7 @@ export default async function CaseStudiesPage() {
     url: `${siteMetadata.siteUrl}/case-studies`,
     about: "Case studies highlighting resilient software, automation, and DevOps engagements delivered by Sephan.",
     hasPart: studies.map((study) => ({
-      "@type": "CaseStudy",
+      "@type": "CreativeWork",
       name: study.title,
       url: `${siteMetadata.siteUrl}/case-studies/${study.slug}`,
       description: study.teaser || study.HeroSummary,

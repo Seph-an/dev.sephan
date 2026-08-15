@@ -3,7 +3,11 @@ title: "How to build a professional online store in Johannesburg using Shopify"
 excerpt: "A tech-heavy look at customizing Shopify for the South African market, including PayFast and local shipping."
 tags: "South Africa, Shopify, PayFast, E-commerce, Johannesburg"
 region: "South Africa"
-image: "/blog-placeholder.svg"
+author: "Sephan"
+publishedAt: "2026-05-25"
+updatedAt: "2026-08-15"
+image: "/blog/shopify-ecommerce-johannesburg.svg"
+imageAlt: "How to build a professional online store in Johannesburg using Shopify"
 ---
 
 Johannesburg is the commercial engine of South Africa, and for many businesses in Sandton, Rosebank, or the CBD, Shopify is the platform of choice for moving online. However, simply signing up for a Shopify account is just the beginning. To truly compete in the SA market, you need a store that is technically tailored to local payment gateways, logistics partners, and the specific browsing habits of South African consumers. In this guide, we’ll look at the technical customization required to build a high-performance Shopify store in Joburg.
