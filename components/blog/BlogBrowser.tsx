@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { Search, X } from "lucide-react";
+import { ChevronDown, Search, X } from "lucide-react";
 import type { BlogPost } from "@/lib/blog";
 import BlogCard from "@/components/blog/BlogCard";
 import PaginationControls from "@/components/content/PaginationControls";
@@ -52,16 +52,17 @@ export default function BlogBrowser({ posts }: { posts: BlogPost[] }) {
             className="min-h-11 w-full rounded-xl border border-white/10 bg-slate-950/60 py-2 pl-10 pr-3 text-sm text-white outline-none transition placeholder:text-white/40 focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/15"
           />
         </label>
-        <label>
+        <label className="relative block">
           <span className="sr-only">Filter articles by topic</span>
           <select
             value={tag}
             onChange={(event) => { setTag(event.target.value); setPage(1); }}
-            className="min-h-11 w-full rounded-xl border border-white/10 bg-slate-950 px-3 text-sm text-white outline-none transition focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/15"
+            className="min-h-11 w-full appearance-none rounded-xl border border-white/10 bg-slate-950 py-2 pl-3 pr-10 text-sm text-white outline-none transition focus:border-emerald-400/60 focus:ring-2 focus:ring-emerald-400/15"
           >
             <option value="all">All topics</option>
             {tags.map((item) => <option key={item} value={item}>{item}</option>)}
           </select>
+          <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/55" aria-hidden />
         </label>
         <button
           type="button"
