@@ -59,16 +59,7 @@ const servicesSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "E-commerce Automation and Integration Services",
-  provider: {
-    "@type": "Person",
-    name: siteMetadata.siteAuthor,
-    email: siteMetadata.contactEmail,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: siteMetadata.location.city,
-      addressCountry: siteMetadata.location.country,
-    },
-  },
+  provider: { "@id": siteMetadata.professionalServiceId },
   areaServed: ["Kenya", "Remote"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",

@@ -113,3 +113,7 @@ Next, synchronise a limited product group or one branch. Test simultaneous onlin
 After launch, review discrepancies daily until behaviour is stable. Retire duplicate spreadsheets and old connectors on a planned date so they cannot continue changing quantities. Document credentials, mappings, alert ownership and recovery actions. Schedule periodic catalogue and API reviews.
 
 A good inventory integration does not promise that stock can never be wrong. It reduces the causes of drift, detects disagreement quickly and gives the team a safe way to recover. If your store and POS currently compete for truth, request an [automation audit](/contact/ecommerce-automation-audit) or use the primary [e-commerce automation service for Kenya](/ke/ecommerce-automation) to structure the first technical review.
+
+## Primary references
+
+Implementation claims in this article can be checked against [Shopify InventoryLevel API documentation](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryLevel), [WooCommerce REST API documentation](https://woocommerce.github.io/woocommerce-rest-api-docs/).

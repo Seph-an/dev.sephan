@@ -101,3 +101,7 @@ Next, launch with monitoring and staff training. Observe the first production or
 The result should feel less dramatic than a collection of flashy demos. Orders move predictably, staff know where to look, customers receive timely information and owners can see what requires attention. That dependable operating model is the real benefit of automation.
 
 If you want to apply this sequence to an existing Kenyan store, request an [e-commerce automation audit](/contact/ecommerce-automation-audit) or review the primary [Kenya e-commerce automation service](/ke/ecommerce-automation). Bring one recent order, the systems it touched and the points where staff intervened; that is enough to begin a useful technical review.
+
+## Primary references
+
+Implementation claims in this article can be checked against [Safaricom Daraja developer portal](https://developer.safaricom.co.ke/), [n8n error-handling documentation](https://docs.n8n.io/flow-logic/error-handling/).

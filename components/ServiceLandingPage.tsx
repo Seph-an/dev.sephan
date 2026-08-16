@@ -16,7 +16,7 @@ export default function ServiceLandingPage({ service }: { service: ServicePageCo
         name: service.eyebrow,
         description: service.description,
         url: `${siteMetadata.siteUrl}${service.path}`,
-        provider: { "@id": siteMetadata.personId },
+        provider: { "@id": siteMetadata.professionalServiceId },
         areaServed: service.market,
         serviceType: service.eyebrow,
       },

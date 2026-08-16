@@ -5,6 +5,7 @@ export const siteMetadata = {
   contactEmail: "hello@sephanly.com",
   analyticsId: "G-CDWKNTG32R",
   personId: "https://dev.sephan.co.ke/#sephan",
+  professionalServiceId: "https://dev.sephan.co.ke/#professional-service",
   websiteId: "https://dev.sephan.co.ke/#website",
   brandTagline: "E-commerce automation and integration engineer",
   defaultDescription:

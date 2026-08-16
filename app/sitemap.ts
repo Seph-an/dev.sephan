@@ -3,7 +3,7 @@ import { fetchCaseStudies } from '@/lib/caseStudies'
 import { siteMetadata } from '@/lib/siteMetadata'
 import { getBlogPosts } from '@/lib/blog'
 
-const siteUpdatedAt = new Date('2026-08-15')
+const siteUpdatedAt = new Date('2026-08-16')
 const caseStudiesUpdatedAt = new Date('2025-11-11T13:07:51Z')
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

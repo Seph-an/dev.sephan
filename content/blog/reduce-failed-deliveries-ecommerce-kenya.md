@@ -115,3 +115,7 @@ Launch gradually and reconcile the first production batch by hand against the st
 Document credentials, status mappings, routing rules, alert ownership, refund boundaries and manual recovery. Review performance on a schedule and revisit the design when volumes, locations, carriers or promises change.
 
 The target is not a delivery operation with no human involvement. It is one where routine orders progress consistently and people receive early, specific information when judgment is needed. To assess an existing store, request an [e-commerce automation audit](/contact/ecommerce-automation-audit) or start with the primary [e-commerce automation service in Kenya](/ke/ecommerce-automation). A sample of recent successful and failed orders will make the review concrete.
+
+## Primary references
+
+Implementation claims in this article can be checked against [Google Address Validation API overview](https://developers.google.com/maps/documentation/address-validation/overview), [Safaricom Daraja developer portal](https://developer.safaricom.co.ke/).
