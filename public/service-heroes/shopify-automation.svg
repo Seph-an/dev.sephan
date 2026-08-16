@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Shopify operations automation</title>
+  <desc id="desc">Shopify orders flow from the storefront into inventory, fulfilment, customer support and accounting systems.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071b18"/><stop offset="1" stop-color="#111827"/></linearGradient><linearGradient id="accent"><stop stop-color="#a3e635"/><stop offset="1" stop-color="#10b981"/></linearGradient><pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#94a3b8" stroke-opacity=".07"/></pattern></defs>
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/><rect width="1200" height="800" rx="40" fill="url(#grid)"/>
+  <path d="M402 400h396M600 400V225m0 175v175" fill="none" stroke="#34d399" stroke-width="6" stroke-dasharray="10 14"/>
+  <g fill="#0f172a" stroke="#64748b" stroke-width="4"><rect x="117" y="280" width="285" height="240" rx="30"/><rect x="480" y="100" width="240" height="145" rx="26"/><rect x="798" y="280" width="285" height="240" rx="30"/><rect x="480" y="555" width="240" height="145" rx="26"/></g>
+  <path d="m216 365 19-74h49l20 74" fill="none" stroke="#a3e635" stroke-width="12" stroke-linecap="round"/><path d="m190 349 20 102h101l19-102z" fill="url(#accent)" opacity=".9"/><text x="260" y="414" fill="#052e24" font-family="Arial,sans-serif" font-size="48" font-weight="800" text-anchor="middle">S</text><text x="260" y="484" fill="#d9f99d" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">SHOPIFY ORDER</text>
+  <g fill="none" stroke="#6ee7b7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"><path d="M531 171h138m-114-30v60m45-60v60m45-60v60"/><path d="m883 356 58-31 58 31v70l-58 31-58-31z"/><path d="m883 356 58 32 58-32m-58 32v69"/><path d="M534 633h132m-110-42v42m42-72v72m42-22v22"/></g>
+  <g fill="#d1fae5" font-family="Arial,sans-serif" font-size="21" font-weight="700" text-anchor="middle"><text x="600" y="222">INVENTORY</text><text x="941" y="484">FULFILMENT</text><text x="600" y="677">OPERATIONS</text></g>
+  <circle cx="600" cy="400" r="82" fill="#052e24" stroke="#34d399" stroke-width="5"/><path d="M557 400h86m-43-43v86" stroke="#86efac" stroke-width="13" stroke-linecap="round"/><circle cx="600" cy="400" r="18" fill="#10b981"/>
+</svg>

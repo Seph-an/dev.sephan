@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Reliable n8n commerce workflow orchestration</title>
+  <desc id="desc">A monitored automation workflow connects storefront, inventory, customers, fulfilment and reporting with recoverable paths.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101627"/><stop offset="1" stop-color="#071b18"/></linearGradient><linearGradient id="wire"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#34d399"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#wire)" stroke-width="7" stroke-linecap="round" opacity=".9"><path d="M252 232C390 232 384 400 520 400"/><path d="M252 568C390 568 384 400 520 400"/><path d="M680 400c136 0 130-168 268-168"/><path d="M680 400c136 0 130 168 268 168"/></g>
+  <g fill="#111827" stroke="#64748b" stroke-width="4"><rect x="106" y="154" width="235" height="156" rx="28"/><rect x="106" y="490" width="235" height="156" rx="28"/><rect x="859" y="154" width="235" height="156" rx="28"/><rect x="859" y="490" width="235" height="156" rx="28"/></g>
+  <g fill="#cbd5e1" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle"><text x="224" y="282">STORE EVENT</text><text x="224" y="618">CUSTOMER DATA</text><text x="977" y="282">FULFILMENT</text><text x="977" y="618">REPORTING</text></g>
+  <g fill="none" stroke="#6ee7b7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M179 211h89l-9 43h-70l-13-65h-19"/><path d="M190 535c0-25 68-25 68 0s-68 25-68 0zm0 0v39c0 25 68 25 68 0v-39"/><path d="m937 205 40-20 40 20v48l-40 20-40-20z"/><path d="M936 559h24v25h25v-52h25v52h25"/></g>
+  <circle cx="600" cy="400" r="118" fill="#1f2937" stroke="#fb7185" stroke-width="5" filter="url(#glow)"/><g fill="none" stroke="#fb7185" stroke-width="8"><circle cx="560" cy="370" r="20"/><circle cx="646" cy="350" r="20"/><circle cx="638" cy="442" r="20"/><path d="m578 362 48-10m-55 33 53 47"/></g><text x="600" y="548" fill="#fda4af" font-family="Arial,sans-serif" font-size="22" font-weight="700" text-anchor="middle">MONITORED WORKFLOW</text>
+  <g fill="#34d399"><circle cx="380" cy="294" r="9"/><circle cx="409" cy="506" r="9"/><circle cx="791" cy="294" r="9"/><circle cx="808" cy="506" r="9"/></g>
+</svg>

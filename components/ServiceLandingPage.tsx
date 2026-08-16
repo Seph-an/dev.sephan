@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, CircleAlert } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -41,29 +42,46 @@ export default function ServiceLandingPage({ service }: { service: ServicePageCo
           </div>
           <div className="relative z-10 mx-auto max-w-6xl">
             <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.eyebrow }]} />
-            <p className="inline-flex rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
-              {service.eyebrow}
-            </p>
-            <h1 className="mt-6 max-w-4xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-              {service.title}
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/75">{service.description}</p>
-            <p className="mt-4 max-w-3xl text-base leading-7 text-emerald-100/80">{service.outcome}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href={`/contact/ecommerce-automation-audit?service=${encodeURIComponent(service.eyebrow)}`}
-                className="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-slate-950 transition hover:bg-emerald-400"
-                data-ga-event="book_consultation"
-                data-ga-service={service.slug}
-                data-ga-market={service.market}
-                data-ga-placement="service_hero"
-              >
-                Request an automation audit
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-              <Link href={service.proof.href} className="inline-flex items-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 font-semibold text-white transition hover:bg-white/10">
-                See relevant proof
-              </Link>
+            <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.08fr)_minmax(380px,0.92fr)]">
+              <div>
+                <p className="inline-flex rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                  {service.eyebrow}
+                </p>
+                <h1 className="mt-6 text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+                  {service.title}
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-white/75">{service.description}</p>
+                <p className="mt-4 text-base leading-7 text-emerald-100/80">{service.outcome}</p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link
+                    href={`/contact/ecommerce-automation-audit?service=${encodeURIComponent(service.eyebrow)}`}
+                    className="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-slate-950 transition hover:bg-emerald-400"
+                    data-ga-event="book_consultation"
+                    data-ga-service={service.slug}
+                    data-ga-market={service.market}
+                    data-ga-placement="service_hero"
+                  >
+                    Request an automation audit
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                  <Link href={service.proof.href} className="inline-flex items-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 font-semibold text-white transition hover:bg-white/10">
+                    See relevant proof
+                  </Link>
+                </div>
+              </div>
+              <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+                <div className="absolute -inset-5 rounded-[2.5rem] bg-emerald-400/10 blur-3xl" aria-hidden="true" />
+                <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/70 p-2 shadow-2xl shadow-emerald-950/40">
+                  <Image
+                    src={service.heroImage}
+                    alt={service.heroImageAlt}
+                    width={1200}
+                    height={800}
+                    priority
+                    className="h-auto w-full rounded-[1.15rem]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

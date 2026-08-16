@@ -6,6 +6,8 @@ export type ServicePageConfig = {
   title: string;
   description: string;
   outcome: string;
+  heroImage: string;
+  heroImageAlt: string;
   problems: string[];
   deliverables: { title: string; description: string }[];
   workflow: { step: string; title: string; description: string }[];
@@ -25,6 +27,8 @@ export const servicePages = {
       "I design reliable e-commerce automations for Kenyan retailers: orders, M-Pesa status, inventory, fulfilment, CRM, customer messages and reporting moving through one monitored system.",
     outcome:
       "Your team handles exceptions and growth decisions instead of re-entering orders, checking payment screenshots or reconciling disconnected spreadsheets.",
+    heroImage: "/service-heroes/ecommerce-automation-kenya.svg",
+    heroImageAlt: "Store orders connected to M-Pesa, inventory, delivery and reporting through an automated commerce workflow",
     problems: [
       "Orders arrive through a store, WhatsApp and marketplaces but there is no single operational queue.",
       "M-Pesa confirmations and order status updates depend on a person checking transactions.",
@@ -79,6 +83,8 @@ export const servicePages = {
       "Production-minded Daraja integrations for Kenyan stores: STK Push initiation, callback validation, transaction records, reconciliation, customer status and safe recovery when networks or callbacks fail.",
     outcome:
       "Customers get a clear checkout experience while operations and finance work from verified payment state rather than manual messages.",
+    heroImage: "/service-heroes/mpesa-ecommerce-integration.svg",
+    heroImageAlt: "M-Pesa phone payment verified against an e-commerce order and reconciliation record",
     problems: [
       "Customers send transaction screenshots and staff manually match them to orders.",
       "A successful customer payment does not always produce a successful callback.",
@@ -121,6 +127,8 @@ export const servicePages = {
       "I design, self-host and harden n8n workflows for order, inventory, customer support, fulfilment, catalogue and reporting operations—with monitoring and recovery built in.",
     outcome:
       "A maintainable orchestration layer connects the tools you already use while your team retains visibility and control.",
+    heroImage: "/service-heroes/n8n-ecommerce-automation.svg",
+    heroImageAlt: "Monitored n8n workflow connecting storefront, inventory, customer, fulfilment and reporting systems",
     problems: [
       "Per-task automation bills rise directly with order and catalogue volume.",
       "Important workflows live in one employee's account with no documentation or monitoring.",
@@ -163,6 +171,8 @@ export const servicePages = {
       "Connect Shopify orders, products, inventory and customers with the operational systems behind the store: ERP, POS, 3PL, CRM, accounting, support and reporting.",
     outcome:
       "Store events become controlled operational actions, with fewer stock mistakes, faster fulfilment and a traceable record when something needs attention.",
+    heroImage: "/service-heroes/shopify-automation.svg",
+    heroImageAlt: "Shopify orders flowing into inventory, fulfilment and back-office operations",
     problems: [
       "Orders are retyped into fulfilment, accounting or ERP systems.",
       "Stock is updated in batches and overselling is discovered after checkout.",
