@@ -8,6 +8,7 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Analytics from "@/components/Analytics";
 import JsonLd from "@/components/JsonLd";
 import { siteMetadata } from "@/lib/siteMetadata";
+import { defaultSocialImage } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,20 +39,13 @@ export const metadata: Metadata = {
     siteName: siteMetadata.siteName,
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/Sephan-new.jpg",
-        width: 1200,
-        height: 1200,
-        alt: "Sephan, e-commerce automation and integration engineer",
-      },
-    ],
+    images: [defaultSocialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteMetadata.siteName} · ${siteMetadata.brandTagline}`,
     description: siteMetadata.defaultDescription,
-    images: ["/Sephan-new.jpg"],
+    images: [defaultSocialImage.url],
   },
   robots: {
     index: true,

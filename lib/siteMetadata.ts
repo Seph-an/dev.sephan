@@ -6,6 +6,7 @@ export const siteMetadata = {
   analyticsId: "G-CDWKNTG32R",
   personId: "https://dev.sephan.co.ke/#sephan",
   professionalServiceId: "https://dev.sephan.co.ke/#professional-service",
+  organizationId: "https://dev.sephan.co.ke/#organization",
   websiteId: "https://dev.sephan.co.ke/#website",
   brandTagline: "E-commerce automation and integration engineer",
   defaultDescription:
@@ -27,4 +28,5 @@ export const siteMetadata = {
     city: "Nairobi",
     country: "Kenya",
   },
+  defaultSocialImage: "/Sephan-new.jpg",
 };

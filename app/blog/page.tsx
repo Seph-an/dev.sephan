@@ -2,23 +2,16 @@ import { Metadata } from "next";
 import { getBlogPosts } from "@/lib/blog";
 import BlogBrowser from "@/components/blog/BlogBrowser";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { siteMetadata } from "@/lib/siteMetadata";
+import { socialMetadata } from "@/lib/seo";
+
+const title = "E-commerce Automation Engineering Insights";
+const description = "Practical guides to M-Pesa, n8n, Shopify, commerce integrations and reliable operations.";
 
 export const metadata: Metadata = {
   title: "Engineering Blog · E-commerce Systems & Automation",
-  description: "Technical insights on building high-performance e-commerce platforms, M-Pesa integrations, and automated business workflows in East Africa.",
+  description,
   alternates: { canonical: "/blog" },
-  openGraph: {
-    title: "E-commerce Automation Engineering Insights",
-    description: "Practical guides to M-Pesa, n8n, Shopify, commerce integrations and reliable operations.",
-    url: `${siteMetadata.siteUrl}/blog`,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "E-commerce Automation Engineering Insights",
-    description: "Practical guides to M-Pesa, n8n, Shopify, commerce integrations and reliable operations.",
-  },
+  ...socialMetadata({ title, description, path: "/blog" }),
 };
 
 export default async function BlogPage() {

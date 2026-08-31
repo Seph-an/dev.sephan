@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getBlogPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
+import MarkdownContent from "@/components/blog/MarkdownContent";
 import { siteMetadata } from "@/lib/siteMetadata";
 
 export async function generateMetadata({
@@ -150,36 +151,7 @@ export default async function BlogPostPage({
             />
           </div>
 
-          <div className="prose prose-invert prose-emerald max-w-none">
-            {/* Simple Markdown Rendering Logic */}
-            <div className="blog-content leading-relaxed text-white/80 space-y-6">
-              {post.content.split('\n\n').map((block, i) => {
-                if (block.startsWith('### ')) {
-                  return <h3 key={i} className="text-2xl font-bold text-white mt-12 mb-4">{block.replace('### ', '')}</h3>;
-                }
-                if (block.startsWith('## ')) {
-                  return <h2 key={i} className="text-3xl font-bold text-white mt-16 mb-6">{block.replace('## ', '')}</h2>;
-                }
-                // Handle basic links [text](url)
-                const parts = block.split(/(\[.*?\]\(.*?\))/g);
-                return (
-                  <p key={i} className="text-lg">
-                    {parts.map((part, j) => {
-                      const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
-                      if (linkMatch) {
-                        return (
-                          <Link key={j} href={linkMatch[2]} className="text-emerald-400 hover:underline decoration-emerald-400/30 underline-offset-4">
-                            {linkMatch[1]}
-                          </Link>
-                        );
-                      }
-                      return part;
-                    })}
-                  </p>
-                );
-              })}
-            </div>
-          </div>
+          <MarkdownContent content={post.content} />
 
           <footer className="mt-16 border-t border-white/10 pt-10">
             <div className="mb-10 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
